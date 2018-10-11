@@ -32,14 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.txtBxFromAcct = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBxFromDept = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBxFromDate = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBxFromAddress = new System.Windows.Forms.TextBox();
+            this.txtBxFromName = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -55,6 +56,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printDiag = new System.Windows.Forms.PrintDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -97,14 +100,15 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.printBtn);
+            this.tabPage1.Controls.Add(this.txtBxFromAcct);
             this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.txtBxFromDept);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox3);
+            this.tabPage1.Controls.Add(this.txtBxFromDate);
             this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.txtBxFromAddress);
+            this.tabPage1.Controls.Add(this.txtBxFromName);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
@@ -115,13 +119,23 @@
             this.tabPage1.Text = "From";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // printBtn
             // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(97, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(340, 26);
-            this.textBox5.TabIndex = 9;
+            this.printBtn.Location = new System.Drawing.Point(180, 193);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(100, 46);
+            this.printBtn.TabIndex = 10;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
+            // txtBxFromAcct
+            // 
+            this.txtBxFromAcct.BackColor = System.Drawing.Color.White;
+            this.txtBxFromAcct.Location = new System.Drawing.Point(97, 138);
+            this.txtBxFromAcct.Name = "txtBxFromAcct";
+            this.txtBxFromAcct.Size = new System.Drawing.Size(340, 26);
+            this.txtBxFromAcct.TabIndex = 9;
             // 
             // label5
             // 
@@ -134,13 +148,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Acct";
             // 
-            // textBox4
+            // txtBxFromDept
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(97, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(340, 26);
-            this.textBox4.TabIndex = 7;
+            this.txtBxFromDept.BackColor = System.Drawing.Color.White;
+            this.txtBxFromDept.Location = new System.Drawing.Point(97, 106);
+            this.txtBxFromDept.Name = "txtBxFromDept";
+            this.txtBxFromDept.Size = new System.Drawing.Size(340, 26);
+            this.txtBxFromDept.TabIndex = 7;
             // 
             // label4
             // 
@@ -153,13 +167,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Dept";
             // 
-            // textBox3
+            // txtBxFromDate
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(97, 74);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(340, 26);
-            this.textBox3.TabIndex = 5;
+            this.txtBxFromDate.BackColor = System.Drawing.Color.White;
+            this.txtBxFromDate.Location = new System.Drawing.Point(97, 74);
+            this.txtBxFromDate.Name = "txtBxFromDate";
+            this.txtBxFromDate.Size = new System.Drawing.Size(340, 26);
+            this.txtBxFromDate.TabIndex = 5;
             // 
             // label3
             // 
@@ -172,21 +186,21 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Date";
             // 
-            // textBox2
+            // txtBxFromAddress
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(97, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtBxFromAddress.BackColor = System.Drawing.Color.White;
+            this.txtBxFromAddress.Location = new System.Drawing.Point(97, 42);
+            this.txtBxFromAddress.Name = "txtBxFromAddress";
+            this.txtBxFromAddress.Size = new System.Drawing.Size(340, 26);
+            this.txtBxFromAddress.TabIndex = 3;
             // 
-            // textBox1
+            // txtBxFromName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(97, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 26);
-            this.textBox1.TabIndex = 2;
+            this.txtBxFromName.BackColor = System.Drawing.Color.White;
+            this.txtBxFromName.Location = new System.Drawing.Point(97, 9);
+            this.txtBxFromName.Name = "txtBxFromName";
+            this.txtBxFromName.Size = new System.Drawing.Size(340, 26);
+            this.txtBxFromName.TabIndex = 2;
             // 
             // tabPage2
             // 
@@ -346,6 +360,14 @@
             this.listBox1.Size = new System.Drawing.Size(456, 265);
             this.listBox1.TabIndex = 0;
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printDiag
+            // 
+            this.printDiag.UseEXDialog = true;
+            // 
             // BillOfLading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -373,13 +395,13 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBxFromAddress;
+        private System.Windows.Forms.TextBox txtBxFromName;
+        private System.Windows.Forms.TextBox txtBxFromAcct;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBxFromDept;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBxFromDate;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
@@ -395,5 +417,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button printBtn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintDialog printDiag;
     }
 }
