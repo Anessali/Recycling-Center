@@ -57,12 +57,12 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.numFontSize = new System.Windows.Forms.NumericUpDown();
+            this.printBtn = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDiag = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printBtn = new System.Windows.Forms.Button();
-            this.numFontSize = new System.Windows.Forms.NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -375,6 +375,37 @@
             this.tabPage4.Text = "Printing";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(263, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 20);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Font Size:";
+            // 
+            // numFontSize
+            // 
+            this.numFontSize.Location = new System.Drawing.Point(350, 47);
+            this.numFontSize.Name = "numFontSize";
+            this.numFontSize.Size = new System.Drawing.Size(66, 26);
+            this.numFontSize.TabIndex = 14;
+            this.numFontSize.Value = new decimal(new int[] {
+            14,
+            0,
+            0,
+            0});
+            // 
+            // printBtn
+            // 
+            this.printBtn.Location = new System.Drawing.Point(177, 133);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(100, 46);
+            this.printBtn.TabIndex = 13;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
+            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -394,37 +425,6 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // printBtn
-            // 
-            this.printBtn.Location = new System.Drawing.Point(177, 133);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(100, 46);
-            this.printBtn.TabIndex = 13;
-            this.printBtn.Text = "Print";
-            this.printBtn.UseVisualStyleBackColor = true;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
-            // 
-            // numFontSize
-            // 
-            this.numFontSize.Location = new System.Drawing.Point(350, 47);
-            this.numFontSize.Name = "numFontSize";
-            this.numFontSize.Size = new System.Drawing.Size(66, 26);
-            this.numFontSize.TabIndex = 14;
-            this.numFontSize.Value = new decimal(new int[] {
-            14,
-            0,
-            0,
-            0});
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(263, 49);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 20);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "Font Size:";
-            // 
             // BillOfLading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -432,6 +432,7 @@
             this.ClientSize = new System.Drawing.Size(470, 234);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BillOfLading";
             this.Text = "BillOfLading";
