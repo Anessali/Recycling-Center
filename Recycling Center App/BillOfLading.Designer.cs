@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillOfLading));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.printBtn = new System.Windows.Forms.Button();
             this.txtBxFromAcct = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBxFromDept = new System.Windows.Forms.TextBox();
@@ -56,12 +56,19 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDiag = new System.Windows.Forms.PrintDialog();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.numFontSize = new System.Windows.Forms.NumericUpDown();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numFontSize)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,16 +98,16 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(470, 304);
+            this.tabControl1.Size = new System.Drawing.Size(470, 234);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.printBtn);
             this.tabPage1.Controls.Add(this.txtBxFromAcct);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.txtBxFromDept);
@@ -114,20 +121,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(462, 271);
+            this.tabPage1.Size = new System.Drawing.Size(462, 201);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "From";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // printBtn
-            // 
-            this.printBtn.Location = new System.Drawing.Point(180, 193);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(100, 46);
-            this.printBtn.TabIndex = 10;
-            this.printBtn.Text = "Print";
-            this.printBtn.UseVisualStyleBackColor = true;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // txtBxFromAcct
             // 
@@ -136,6 +133,7 @@
             this.txtBxFromAcct.Name = "txtBxFromAcct";
             this.txtBxFromAcct.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromAcct.TabIndex = 9;
+            this.txtBxFromAcct.Text = "Acct Test";
             // 
             // label5
             // 
@@ -155,6 +153,7 @@
             this.txtBxFromDept.Name = "txtBxFromDept";
             this.txtBxFromDept.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromDept.TabIndex = 7;
+            this.txtBxFromDept.Text = "Dept Test";
             // 
             // label4
             // 
@@ -174,6 +173,7 @@
             this.txtBxFromDate.Name = "txtBxFromDate";
             this.txtBxFromDate.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromDate.TabIndex = 5;
+            this.txtBxFromDate.Text = "Date Test";
             // 
             // label3
             // 
@@ -193,6 +193,7 @@
             this.txtBxFromAddress.Name = "txtBxFromAddress";
             this.txtBxFromAddress.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromAddress.TabIndex = 3;
+            this.txtBxFromAddress.Text = "Address Test";
             // 
             // txtBxFromName
             // 
@@ -201,6 +202,7 @@
             this.txtBxFromName.Name = "txtBxFromName";
             this.txtBxFromName.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromName.TabIndex = 2;
+            this.txtBxFromName.Text = "Name Test";
             // 
             // tabPage2
             // 
@@ -219,7 +221,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(462, 271);
+            this.tabPage2.Size = new System.Drawing.Size(462, 201);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "To";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -345,7 +347,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(462, 271);
+            this.tabPage3.Size = new System.Drawing.Size(462, 201);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Packages";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -357,8 +359,21 @@
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(3, 3);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(456, 265);
+            this.listBox1.Size = new System.Drawing.Size(456, 195);
             this.listBox1.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label12);
+            this.tabPage4.Controls.Add(this.numFontSize);
+            this.tabPage4.Controls.Add(this.printBtn);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(462, 201);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Printing";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // printDocument1
             // 
@@ -368,11 +383,53 @@
             // 
             this.printDiag.UseEXDialog = true;
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printBtn
+            // 
+            this.printBtn.Location = new System.Drawing.Point(177, 133);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(100, 46);
+            this.printBtn.TabIndex = 13;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
+            // 
+            // numFontSize
+            // 
+            this.numFontSize.Location = new System.Drawing.Point(350, 47);
+            this.numFontSize.Name = "numFontSize";
+            this.numFontSize.Size = new System.Drawing.Size(66, 26);
+            this.numFontSize.TabIndex = 14;
+            this.numFontSize.Value = new decimal(new int[] {
+            14,
+            0,
+            0,
+            0});
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(263, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 20);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "Font Size:";
+            // 
             // BillOfLading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 304);
+            this.ClientSize = new System.Drawing.Size(470, 234);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -384,6 +441,9 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numFontSize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,8 +477,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button printBtn;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDiag;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Button printBtn;
+        private System.Windows.Forms.NumericUpDown numFontSize;
+        private System.Windows.Forms.Label label12;
     }
 }
