@@ -31,3 +31,15 @@ C:\Users\Shiro\Google Drive\Programming\Recycling-Center\Recycling Center App\ob
 C:\Users\Shiro\Google Drive\Programming\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
 C:\Users\Shiro\Google Drive\Programming\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Google Drive\Programming\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
