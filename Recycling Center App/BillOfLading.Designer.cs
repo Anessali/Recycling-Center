@@ -133,7 +133,6 @@
             this.txtBxFromAcct.Name = "txtBxFromAcct";
             this.txtBxFromAcct.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromAcct.TabIndex = 9;
-            this.txtBxFromAcct.Text = "Acct Test";
             // 
             // label5
             // 
@@ -153,7 +152,6 @@
             this.txtBxFromDept.Name = "txtBxFromDept";
             this.txtBxFromDept.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromDept.TabIndex = 7;
-            this.txtBxFromDept.Text = "Dept Test";
             // 
             // label4
             // 
@@ -173,7 +171,6 @@
             this.txtBxFromDate.Name = "txtBxFromDate";
             this.txtBxFromDate.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromDate.TabIndex = 5;
-            this.txtBxFromDate.Text = "Date Test";
             // 
             // label3
             // 
@@ -193,7 +190,6 @@
             this.txtBxFromAddress.Name = "txtBxFromAddress";
             this.txtBxFromAddress.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromAddress.TabIndex = 3;
-            this.txtBxFromAddress.Text = "Address Test";
             // 
             // txtBxFromName
             // 
@@ -202,7 +198,6 @@
             this.txtBxFromName.Name = "txtBxFromName";
             this.txtBxFromName.Size = new System.Drawing.Size(340, 26);
             this.txtBxFromName.TabIndex = 2;
-            this.txtBxFromName.Text = "Name Test";
             // 
             // tabPage2
             // 
@@ -436,6 +431,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "BillOfLading";
             this.Text = "BillOfLading";
+            this.Load += new System.EventHandler(this.BillOfLading_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

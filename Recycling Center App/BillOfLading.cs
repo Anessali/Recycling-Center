@@ -14,6 +14,7 @@ namespace Recycling_Center_App
     public partial class BillOfLading : Form
     {
         
+
         public BillOfLading()
         {
             InitializeComponent();
@@ -22,13 +23,16 @@ namespace Recycling_Center_App
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            //Sets up printed area
+            //Determines what is printed
             string printedText = String.Format("Name:\t{0}\nAddress:\t{1}\nDate:\t{2}\n" +
                 "Dept:\t{3}\nAccount:\t{4}", 
             txtBxFromName.Text, txtBxFromAddress.Text, txtBxFromDate.Text, 
             txtBxFromDept.Text, txtBxFromAcct.Text);
 
-            //Sets up the font used
+            //Blank page testing
+            printedText = "";
+
+            //Sets up the font
             int fontSize = Convert.ToInt32(numFontSize.Text);
             Font setFont = new Font("Times New Roman", fontSize, FontStyle.Regular);
 
@@ -37,30 +41,30 @@ namespace Recycling_Center_App
 
         private void printBtn_Click_1(object sender, EventArgs e)
         {
-            /** Currently unused print dialog. Will allow user to select printer
-            PrintDocument docPrint = new PrintDocument();
-
-            //This allows the user to select the page rank to print
-            printDiag.AllowSomePages = true;
-
-            //shows help button
             printDiag.ShowHelp = true;
+            printDiag.Document = printDocument1;
 
-            ///Sets the document property PrintDocument object, docPrint.
-            printDiag.Document = docPrint;
 
-            DialogResult result = printDiag.ShowDialog();
-
-            //Tells it to print doc if result is OK
-            if (result == DialogResult.OK)
-            {
-                docPrint.Print();
-            }
-            */
             if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
             {
-                printDocument1.Print();
+                DialogResult result = printDiag.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    printDocument1.Print();
+                }
             }
+        }
+
+        private void BillOfLading_Load(object sender, EventArgs e)
+        {
+            DateTime dateTest = new DateTime();
+            dateTest = DateTime.Now;
+            //txtBxFromName.Text = "Tj Liggett";
+            //txtBxFromAddress.Text = "Platform 9 and 3/4";
+            //txtBxFromDate.Text = dateTest.ToString("MM/dd/yyyy");
+            //txtBxFromAddress.Text = "Test Address";
+            //txtBxFromDept.Text = "Some department name";
+            //txtBxFromAcct.Text = "This tests account";
         }
     }
 }
