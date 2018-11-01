@@ -23,7 +23,10 @@ namespace Recycling_Center_App
 
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            int fontSize;
+            int fontSize,
+                xCoordOne = 120,
+                xCoordTwo = xCoordOne + 310,
+                yCoordOne = 200;
             //Determines what is printed
             string printedText; 
             
@@ -34,16 +37,16 @@ namespace Recycling_Center_App
             printedText = String.Format("Name:\t{0}\nAddress:\t{1}\nDate:\t{2}\n" +
                 "Dept:\t{3}\nAccount:\t{4}", txtBxFromName.Text, txtBxFromAddress.Text, 
                 txtBxFromDate.Text, txtBxFromDept.Text, txtBxFromAcct.Text);
-            e.Graphics.DrawString("From", GetFont(24), Brushes.Black, new PointF(90, 100));
-            e.Graphics.DrawString(printedText, GetFont(fontSize), Brushes.Black, new PointF(100, 140));
+            e.Graphics.DrawString("From", GetFont(24), Brushes.Black, new PointF(xCoordOne, yCoordOne));
+            e.Graphics.DrawString(printedText, GetFont(fontSize), Brushes.Black, new PointF(xCoordOne + 10, yCoordOne + 40));
 
             //To text
             printedText = String.Format("Name:\t{0}\nCompany: {1}\nStreet:\t{2}\n" +
                 "Location:\t{3}, {4}\nAcct:\t{5}",
                 txtBxToName.Text, txtBxToCompany.Text, txtBxToStreet.Text, txtBxToCity.Text,
                 txtBxToState.Text, txtBxToAccount.Text);
-            e.Graphics.DrawString("To", GetFont(24), Brushes.Black, new PointF(90, 270));
-            e.Graphics.DrawString(printedText, GetFont(fontSize), Brushes.Black, new PointF(100, 310));
+            e.Graphics.DrawString("To", GetFont(24), Brushes.Black, new PointF(xCoordTwo, yCoordOne));
+            e.Graphics.DrawString(printedText, GetFont(fontSize), Brushes.Black, new PointF(xCoordTwo + 10, yCoordOne + 40));
 
         }
 
@@ -82,7 +85,6 @@ namespace Recycling_Center_App
             txtBxFromName.Text = "Tj Liggett";
             txtBxFromAddress.Text = "Platform 9 and 3/4";
             txtBxFromDate.Text = dateTest.ToString("MM/dd/yyyy");
-            txtBxFromAddress.Text = "Test Address";
             txtBxFromDept.Text = "Some department name";
             txtBxFromAcct.Text = "This tests account";
             txtBxToName.Text = "Bob Ross";

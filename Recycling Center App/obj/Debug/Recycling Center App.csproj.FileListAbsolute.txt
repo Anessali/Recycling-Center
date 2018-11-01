@@ -79,3 +79,15 @@ C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Cent
 C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
 C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
+C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
