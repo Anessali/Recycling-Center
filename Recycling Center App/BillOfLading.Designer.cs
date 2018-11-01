@@ -42,16 +42,16 @@
             this.txtBxFromAddress = new System.Windows.Forms.TextBox();
             this.txtBxFromName = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtBxToState = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBxToAccount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBxToCity = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtBxToStreet = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBxToCompany = new System.Windows.Forms.TextBox();
+            this.txtBxToName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -201,16 +201,16 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.txtBxToState);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.txtBxToAccount);
             this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.txtBxToCity);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.textBox8);
+            this.tabPage2.Controls.Add(this.txtBxToStreet);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Controls.Add(this.textBox10);
+            this.tabPage2.Controls.Add(this.txtBxToCompany);
+            this.tabPage2.Controls.Add(this.txtBxToName);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
@@ -221,14 +221,14 @@
             this.tabPage2.Text = "To";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // txtBxToState
             // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Location = new System.Drawing.Point(345, 107);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(90, 26);
-            this.textBox11.TabIndex = 21;
-            this.textBox11.Text = "Dropdown";
+            this.txtBxToState.BackColor = System.Drawing.Color.White;
+            this.txtBxToState.Location = new System.Drawing.Point(345, 107);
+            this.txtBxToState.Name = "txtBxToState";
+            this.txtBxToState.Size = new System.Drawing.Size(90, 26);
+            this.txtBxToState.TabIndex = 21;
+            this.txtBxToState.Text = "MO";
             // 
             // label11
             // 
@@ -241,13 +241,13 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "State";
             // 
-            // textBox6
+            // txtBxToAccount
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(95, 139);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(340, 26);
-            this.textBox6.TabIndex = 19;
+            this.txtBxToAccount.BackColor = System.Drawing.Color.White;
+            this.txtBxToAccount.Location = new System.Drawing.Point(95, 139);
+            this.txtBxToAccount.Name = "txtBxToAccount";
+            this.txtBxToAccount.Size = new System.Drawing.Size(340, 26);
+            this.txtBxToAccount.TabIndex = 19;
             // 
             // label6
             // 
@@ -260,13 +260,13 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "Acct";
             // 
-            // textBox7
+            // txtBxToCity
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(95, 107);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(161, 26);
-            this.textBox7.TabIndex = 17;
+            this.txtBxToCity.BackColor = System.Drawing.Color.White;
+            this.txtBxToCity.Location = new System.Drawing.Point(95, 107);
+            this.txtBxToCity.Name = "txtBxToCity";
+            this.txtBxToCity.Size = new System.Drawing.Size(161, 26);
+            this.txtBxToCity.TabIndex = 17;
             // 
             // label7
             // 
@@ -279,13 +279,13 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "City";
             // 
-            // textBox8
+            // txtBxToStreet
             // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.Location = new System.Drawing.Point(95, 75);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(340, 26);
-            this.textBox8.TabIndex = 15;
+            this.txtBxToStreet.BackColor = System.Drawing.Color.White;
+            this.txtBxToStreet.Location = new System.Drawing.Point(95, 75);
+            this.txtBxToStreet.Name = "txtBxToStreet";
+            this.txtBxToStreet.Size = new System.Drawing.Size(340, 26);
+            this.txtBxToStreet.TabIndex = 15;
             // 
             // label8
             // 
@@ -298,21 +298,21 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Street";
             // 
-            // textBox9
+            // txtBxToCompany
             // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(95, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(340, 26);
-            this.textBox9.TabIndex = 13;
+            this.txtBxToCompany.BackColor = System.Drawing.Color.White;
+            this.txtBxToCompany.Location = new System.Drawing.Point(95, 43);
+            this.txtBxToCompany.Name = "txtBxToCompany";
+            this.txtBxToCompany.Size = new System.Drawing.Size(340, 26);
+            this.txtBxToCompany.TabIndex = 13;
             // 
-            // textBox10
+            // txtBxToName
             // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Location = new System.Drawing.Point(95, 10);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(340, 26);
-            this.textBox10.TabIndex = 12;
+            this.txtBxToName.BackColor = System.Drawing.Color.White;
+            this.txtBxToName.Location = new System.Drawing.Point(95, 10);
+            this.txtBxToName.Name = "txtBxToName";
+            this.txtBxToName.Size = new System.Drawing.Size(340, 26);
+            this.txtBxToName.TabIndex = 12;
             // 
             // label9
             // 
@@ -460,17 +460,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtBxFromDate;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBxToAccount;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBxToCity;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtBxToStreet;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtBxToCompany;
+        private System.Windows.Forms.TextBox txtBxToName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtBxToState;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ListBox listBox1;
