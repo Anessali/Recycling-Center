@@ -14,6 +14,7 @@ namespace Recycling_Center_App
     public partial class BillOfLading : Form
     {
         
+
         public BillOfLading()
         {
             InitializeComponent();
