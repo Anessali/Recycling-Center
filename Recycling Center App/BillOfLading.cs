@@ -65,17 +65,12 @@ namespace Recycling_Center_App
         {
             printDiag.ShowHelp = true;
             printDiag.Document = printDocument1;
-            //MessageBox.Show("Test 1");
-            if (printPreviewDialog1.ShowDialog() == DialogResult.OK)
+            DialogResult result = printDiag.ShowDialog();
+            if (result == DialogResult.OK)
             {
-                MessageBox.Show("Test 2");
-                DialogResult result = printDiag.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    MessageBox.Show("Test 3");
-                    printDocument1.Print();
-                }
+                printPreviewDialog1.ShowDialog();
             }
+            
         }
 
         private void BillOfLading_Load(object sender, EventArgs e)
