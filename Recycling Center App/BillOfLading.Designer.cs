@@ -55,7 +55,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.numFontSize = new System.Windows.Forms.NumericUpDown();
@@ -63,12 +62,14 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDiag = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numFontSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,7 +104,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(470, 234);
+            this.tabControl1.Size = new System.Drawing.Size(470, 236);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -121,7 +122,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(462, 201);
+            this.tabPage1.Size = new System.Drawing.Size(462, 203);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "From";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -216,7 +217,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(462, 201);
+            this.tabPage2.Size = new System.Drawing.Size(462, 344);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "To";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -338,24 +339,14 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.listBox1);
+            this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(462, 201);
+            this.tabPage3.Size = new System.Drawing.Size(462, 203);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Packages";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(3, 3);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(456, 195);
-            this.listBox1.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -365,7 +356,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(462, 201);
+            this.tabPage4.Size = new System.Drawing.Size(462, 203);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Printing";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -393,7 +384,7 @@
             // 
             // printBtn
             // 
-            this.printBtn.Location = new System.Drawing.Point(177, 133);
+            this.printBtn.Location = new System.Drawing.Point(169, 142);
             this.printBtn.Name = "printBtn";
             this.printBtn.Size = new System.Drawing.Size(100, 46);
             this.printBtn.TabIndex = 13;
@@ -420,11 +411,20 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(456, 197);
+            this.dataGridView1.TabIndex = 1;
+            // 
             // BillOfLading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 234);
+            this.ClientSize = new System.Drawing.Size(470, 236);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -441,6 +441,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numFontSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -473,7 +474,6 @@
         private System.Windows.Forms.TextBox txtBxToState;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintDialog printDiag;
         private System.Windows.Forms.TabPage tabPage4;
@@ -481,5 +481,6 @@
         private System.Windows.Forms.Button printBtn;
         private System.Windows.Forms.NumericUpDown numFontSize;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

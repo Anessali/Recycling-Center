@@ -28,6 +28,7 @@ namespace Recycling_Center_App
             int xCoordOne = 120,
                 xCoordTwo = xCoordOne + 310,
                 yCoordOne = 200;
+            int borderDistance = 20;
             Pen pen = new Pen(Brushes.Black);
             #endregion
             fontSize = Convert.ToInt32(numFontSize.Text);
@@ -37,13 +38,17 @@ namespace Recycling_Center_App
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Center;
             
-            DrawBorders(e, 10, pen);
+            DrawBorders(e, borderDistance, pen);
+
+            //Company logo
+            Bitmap getLogo = new Bitmap(Properties.Resources.logo);
+            Bitmap logo = new Bitmap(getLogo, new Size(Convert.ToInt32(getLogo.Width/1.4), Convert.ToInt32(getLogo.Height/1.4)));
+            e.Graphics.DrawImage(logo, borderDistance + 10, borderDistance + 10);
 
             //From text
             string fromText = String.Format("Name:\t{0}\nAddress:\t{1}\nDate:\t{2}\n" +
                 "Dept:\t{3}\nAccount:\t{4}", txtBxFromName.Text, txtBxFromAddress.Text,
                 txtBxFromDate.Text, txtBxFromDept.Text, txtBxFromAcct.Text);
-            //GetDrawLine(e);
 
             //e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, e.PageBounds, format);
 
@@ -67,26 +72,27 @@ namespace Recycling_Center_App
         {
             printDiag.ShowHelp = true;
             printDiag.Document = printDocument1;
-            printPreviewDialog1.ShowDialog();
-            //DialogResult result = printDiag.ShowDialog();
-            //if (result == DialogResult.OK)
-            //{
-            //    printDocument1.Print();
-            //}
+            //printPreviewDialog1.ShowDialog();
+            DialogResult result = printDiag.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
         }
         
-        public Font GetFont(int fontSize)
+        private Font GetFont(int fontSize)
         {
             Font setFont = new Font("Times New Roman", fontSize, FontStyle.Regular);
             return setFont;
         }
         
-        public void DrawBorders(PrintPageEventArgs e, int borderDistance, Pen pen)
+        private void DrawBorders(PrintPageEventArgs e, int borderDistance, Pen pen)
         {
             int xMargin = e.PageBounds.Width,
                 yMargin = e.PageBounds.Height;
             int borderDistance2 = borderDistance + 3;
             bool doubleBorder = true;
+
             e.Graphics.DrawLine(pen, borderDistance, borderDistance, xMargin - borderDistance, borderDistance);
             e.Graphics.DrawLine(pen, xMargin - borderDistance, borderDistance, xMargin - borderDistance, yMargin - borderDistance);
             e.Graphics.DrawLine(pen, xMargin - borderDistance, yMargin - borderDistance, borderDistance, yMargin - borderDistance);
