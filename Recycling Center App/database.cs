@@ -24,14 +24,6 @@ namespace Recycling_Center_App
         {
             // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Vendors' table. You can move, or remove it, as needed.
             this.vendorsTableAdapter.Fill(this._CIS260_recycleDataSet.Vendors);
-            // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Subcategories' table. You can move, or remove it, as needed.
-            this.subcategoriesTableAdapter.Fill(this._CIS260_recycleDataSet.Subcategories);
-            // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Statuses' table. You can move, or remove it, as needed.
-            this.statusesTableAdapter.Fill(this._CIS260_recycleDataSet.Statuses);
-            // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Materials' table. You can move, or remove it, as needed.
-            this.materialsTableAdapter.Fill(this._CIS260_recycleDataSet.Materials);
-            // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Categories' table. You can move, or remove it, as needed.
-            this.categoriesTableAdapter.Fill(this._CIS260_recycleDataSet.Categories);
 
         }
 
@@ -40,32 +32,42 @@ namespace Recycling_Center_App
 
         }
 
-       /* private void saveToolStripButton_Click(object sender, EventArgs e)
+        private void vendorsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
+            this.Validate();
+            this.vendorsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this._CIS260_recycleDataSet);
 
-            string connetionString = null;
-             connetionString = @"Data Source=stusql.ckwia8qkgyyj.us-east-1.rds.amazonaws.com;";
-             SqlConnection cnn = new SqlConnection(connetionString);
-             SqlCommand cmd = new SqlCommand();
-             cmd.Connection = cnn;
-
-            /* cmd.Parameters.AddWithValue("@VendorID", datView.row);
-             cmd.Parameters.AddWithValue("@Hours", hours);
-
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-            try
-            {
-                da.Update(ds, "Vendors");
-                MessageBox.Show("Saved");
+        }
 
 
-            }
-            catch (Exception ee)
-            {
-                MessageBox.Show(ee.Message);
-            }
-        }*/
+
+        /* private void saveToolStripButton_Click(object sender, EventArgs e)
+         {
+             DataSet ds = new DataSet();
+
+             string connetionString = null;
+              connetionString = @"Data Source=stusql.ckwia8qkgyyj.us-east-1.rds.amazonaws.com;";
+              SqlConnection cnn = new SqlConnection(connetionString);
+              SqlCommand cmd = new SqlCommand();
+              cmd.Connection = cnn;
+
+             /* cmd.Parameters.AddWithValue("@VendorID", datView.row);
+              cmd.Parameters.AddWithValue("@Hours", hours);
+
+             SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+             try
+             {
+                 da.Update(ds, "Vendors");
+                 MessageBox.Show("Saved");
+
+
+             }
+             catch (Exception ee)
+             {
+                 MessageBox.Show(ee.Message);
+             }
+         }*/
     }
 }

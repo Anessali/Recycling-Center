@@ -30,19 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatabase));
-            this.vendorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cIS260recycleDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._CIS260_recycleDataSet = new Recycling_Center_App._CIS260_recycleDataSet();
-            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.categoriesTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.CategoriesTableAdapter();
-            this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.materialsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.materialsTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.MaterialsTableAdapter();
-            this.statusesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.statusesTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.StatusesTableAdapter();
-            this.subcategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.subcategoriesTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.SubcategoriesTableAdapter();
-            this.vendorsTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.VendorsTableAdapter();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
@@ -64,87 +51,38 @@
             this.stateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zipDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datView = new System.Windows.Forms.DataGridView();
-            this.MaterialID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaterialName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vendorIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vendorNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.streetAddress1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.streetAddress2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cIS260recycleDataSetBindingSource)).BeginInit();
+            this._CIS260_recycleDataSet = new Recycling_Center_App._CIS260_recycleDataSet();
+            this.vendorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vendorsTableAdapter = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.VendorsTableAdapter();
+            this.tableAdapterManager = new Recycling_Center_App._CIS260_recycleDataSetTableAdapters.TableAdapterManager();
+            this.vendorsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.vendorsBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.vendorsDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subcategoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingNavigator)).BeginInit();
+            this.vendorsBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // vendorsBindingSource
-            // 
-            this.vendorsBindingSource.DataMember = "Vendors";
-            this.vendorsBindingSource.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // cIS260recycleDataSetBindingSource
-            // 
-            this.cIS260recycleDataSetBindingSource.DataSource = this._CIS260_recycleDataSet;
-            this.cIS260recycleDataSetBindingSource.Position = 0;
-            // 
-            // _CIS260_recycleDataSet
-            // 
-            this._CIS260_recycleDataSet.DataSetName = "_CIS260_recycleDataSet";
-            this._CIS260_recycleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoriesBindingSource
-            // 
-            this.categoriesBindingSource.DataMember = "Categories";
-            this.categoriesBindingSource.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // categoriesTableAdapter
-            // 
-            this.categoriesTableAdapter.ClearBeforeFill = true;
-            // 
-            // categoriesBindingSource1
-            // 
-            this.categoriesBindingSource1.DataMember = "Categories";
-            this.categoriesBindingSource1.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // materialsBindingSource
-            // 
-            this.materialsBindingSource.DataMember = "Materials";
-            this.materialsBindingSource.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // materialsTableAdapter
-            // 
-            this.materialsTableAdapter.ClearBeforeFill = true;
-            // 
-            // statusesBindingSource
-            // 
-            this.statusesBindingSource.DataMember = "Statuses";
-            this.statusesBindingSource.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // statusesTableAdapter
-            // 
-            this.statusesTableAdapter.ClearBeforeFill = true;
-            // 
-            // subcategoriesBindingSource
-            // 
-            this.subcategoriesBindingSource.DataMember = "Subcategories";
-            this.subcategoriesBindingSource.DataSource = this.cIS260recycleDataSetBindingSource;
-            // 
-            // subcategoriesTableAdapter
-            // 
-            this.subcategoriesTableAdapter.ClearBeforeFill = true;
-            // 
-            // vendorsTableAdapter
-            // 
-            this.vendorsTableAdapter.ClearBeforeFill = true;
             // 
             // BottomToolStripPanel
             // 
@@ -279,125 +217,246 @@
             this.countryDataGridViewTextBoxColumn2.HeaderText = "Country";
             this.countryDataGridViewTextBoxColumn2.Name = "countryDataGridViewTextBoxColumn2";
             // 
-            // datView
+            // _CIS260_recycleDataSet
             // 
-            this.datView.AutoGenerateColumns = false;
-            this.datView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaterialID,
-            this.MaterialName,
-            this.vendorIDDataGridViewTextBoxColumn,
-            this.vendorNameDataGridViewTextBoxColumn,
-            this.streetAddress1DataGridViewTextBoxColumn,
-            this.streetAddress2DataGridViewTextBoxColumn,
-            this.cityDataGridViewTextBoxColumn,
-            this.stateDataGridViewTextBoxColumn,
-            this.zipDataGridViewTextBoxColumn,
-            this.countryDataGridViewTextBoxColumn});
-            this.datView.DataSource = this.vendorsBindingSource;
-            this.datView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datView.Location = new System.Drawing.Point(0, 0);
-            this.datView.Name = "datView";
-            this.datView.Size = new System.Drawing.Size(1149, 446);
-            this.datView.TabIndex = 1;
+            this._CIS260_recycleDataSet.DataSetName = "_CIS260_recycleDataSet";
+            this._CIS260_recycleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // MaterialID
+            // vendorsBindingSource
             // 
-            this.MaterialID.DataPropertyName = "MaterialID";
-            this.MaterialID.HeaderText = "MaterialID";
-            this.MaterialID.Name = "MaterialID";
+            this.vendorsBindingSource.DataMember = "Vendors";
+            this.vendorsBindingSource.DataSource = this._CIS260_recycleDataSet;
             // 
-            // MaterialName
+            // vendorsTableAdapter
             // 
-            this.MaterialName.DataPropertyName = "MaterialName";
-            this.MaterialName.HeaderText = "MaterialName";
-            this.MaterialName.Name = "MaterialName";
+            this.vendorsTableAdapter.ClearBeforeFill = true;
             // 
-            // vendorIDDataGridViewTextBoxColumn
+            // tableAdapterManager
             // 
-            this.vendorIDDataGridViewTextBoxColumn.DataPropertyName = "VendorID";
-            this.vendorIDDataGridViewTextBoxColumn.HeaderText = "VendorID";
-            this.vendorIDDataGridViewTextBoxColumn.Name = "vendorIDDataGridViewTextBoxColumn";
+            this.tableAdapterManager.AdministatorTableAdapter = null;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.BoxesTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = null;
+            this.tableAdapterManager.MaterialsTableAdapter = null;
+            this.tableAdapterManager.StatusesTableAdapter = null;
+            this.tableAdapterManager.SubcategoriesTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = Recycling_Center_App._CIS260_recycleDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.VendorsTableAdapter = this.vendorsTableAdapter;
             // 
-            // vendorNameDataGridViewTextBoxColumn
+            // vendorsBindingNavigator
             // 
-            this.vendorNameDataGridViewTextBoxColumn.DataPropertyName = "VendorName";
-            this.vendorNameDataGridViewTextBoxColumn.HeaderText = "VendorName";
-            this.vendorNameDataGridViewTextBoxColumn.Name = "vendorNameDataGridViewTextBoxColumn";
+            this.vendorsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.vendorsBindingNavigator.BindingSource = this.vendorsBindingSource;
+            this.vendorsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.vendorsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.vendorsBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.vendorsBindingNavigatorSaveItem});
+            this.vendorsBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.vendorsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.vendorsBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.vendorsBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.vendorsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.vendorsBindingNavigator.Name = "vendorsBindingNavigator";
+            this.vendorsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.vendorsBindingNavigator.Size = new System.Drawing.Size(1149, 25);
+            this.vendorsBindingNavigator.TabIndex = 0;
+            this.vendorsBindingNavigator.Text = "bindingNavigator1";
             // 
-            // streetAddress1DataGridViewTextBoxColumn
+            // bindingNavigatorMoveFirstItem
             // 
-            this.streetAddress1DataGridViewTextBoxColumn.DataPropertyName = "StreetAddress1";
-            this.streetAddress1DataGridViewTextBoxColumn.HeaderText = "StreetAddress1";
-            this.streetAddress1DataGridViewTextBoxColumn.Name = "streetAddress1DataGridViewTextBoxColumn";
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
-            // streetAddress2DataGridViewTextBoxColumn
+            // bindingNavigatorMovePreviousItem
             // 
-            this.streetAddress2DataGridViewTextBoxColumn.DataPropertyName = "StreetAddress2";
-            this.streetAddress2DataGridViewTextBoxColumn.HeaderText = "StreetAddress2";
-            this.streetAddress2DataGridViewTextBoxColumn.Name = "streetAddress2DataGridViewTextBoxColumn";
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
-            // cityDataGridViewTextBoxColumn
+            // bindingNavigatorSeparator
             // 
-            this.cityDataGridViewTextBoxColumn.DataPropertyName = "City";
-            this.cityDataGridViewTextBoxColumn.HeaderText = "City";
-            this.cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
             // 
-            // stateDataGridViewTextBoxColumn
+            // bindingNavigatorPositionItem
             // 
-            this.stateDataGridViewTextBoxColumn.DataPropertyName = "State";
-            this.stateDataGridViewTextBoxColumn.HeaderText = "State";
-            this.stateDataGridViewTextBoxColumn.Name = "stateDataGridViewTextBoxColumn";
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // zipDataGridViewTextBoxColumn
+            // bindingNavigatorCountItem
             // 
-            this.zipDataGridViewTextBoxColumn.DataPropertyName = "Zip";
-            this.zipDataGridViewTextBoxColumn.HeaderText = "Zip";
-            this.zipDataGridViewTextBoxColumn.Name = "zipDataGridViewTextBoxColumn";
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
-            // countryDataGridViewTextBoxColumn
+            // bindingNavigatorSeparator1
             // 
-            this.countryDataGridViewTextBoxColumn.DataPropertyName = "Country";
-            this.countryDataGridViewTextBoxColumn.HeaderText = "Country";
-            this.countryDataGridViewTextBoxColumn.Name = "countryDataGridViewTextBoxColumn";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // vendorsBindingNavigatorSaveItem
+            // 
+            this.vendorsBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.vendorsBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("vendorsBindingNavigatorSaveItem.Image")));
+            this.vendorsBindingNavigatorSaveItem.Name = "vendorsBindingNavigatorSaveItem";
+            this.vendorsBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.vendorsBindingNavigatorSaveItem.Text = "Save Data";
+            this.vendorsBindingNavigatorSaveItem.Click += new System.EventHandler(this.vendorsBindingNavigatorSaveItem_Click);
+            // 
+            // vendorsDataGridView
+            // 
+            this.vendorsDataGridView.AutoGenerateColumns = false;
+            this.vendorsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.vendorsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.vendorsDataGridView.DataSource = this.vendorsBindingSource;
+            this.vendorsDataGridView.Location = new System.Drawing.Point(98, 135);
+            this.vendorsDataGridView.Name = "vendorsDataGridView";
+            this.vendorsDataGridView.Size = new System.Drawing.Size(997, 220);
+            this.vendorsDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "VendorID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "VendorID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "VendorName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "VendorName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "StreetAddress1";
+            this.dataGridViewTextBoxColumn3.HeaderText = "StreetAddress1";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "StreetAddress2";
+            this.dataGridViewTextBoxColumn4.HeaderText = "StreetAddress2";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "City";
+            this.dataGridViewTextBoxColumn5.HeaderText = "City";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "State";
+            this.dataGridViewTextBoxColumn6.HeaderText = "State";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Zip";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Zip";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Country";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // frmDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 446);
-            this.Controls.Add(this.datView);
+            this.Controls.Add(this.vendorsDataGridView);
+            this.Controls.Add(this.vendorsBindingNavigator);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDatabase";
             this.Text = "Database";
             this.Load += new System.EventHandler(this.frmDatabase_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cIS260recycleDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.materialsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.subcategoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsBindingNavigator)).EndInit();
+            this.vendorsBindingNavigator.ResumeLayout(false);
+            this.vendorsBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vendorsDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.BindingSource cIS260recycleDataSetBindingSource;
-        private _CIS260_recycleDataSet _CIS260_recycleDataSet;
-        private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private _CIS260_recycleDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
-        private System.Windows.Forms.BindingSource categoriesBindingSource1;
-        private System.Windows.Forms.BindingSource materialsBindingSource;
-        private _CIS260_recycleDataSetTableAdapters.MaterialsTableAdapter materialsTableAdapter;
-        private System.Windows.Forms.BindingSource statusesBindingSource;
-        private _CIS260_recycleDataSetTableAdapters.StatusesTableAdapter statusesTableAdapter;
-        private System.Windows.Forms.BindingSource subcategoriesBindingSource;
-        private _CIS260_recycleDataSetTableAdapters.SubcategoriesTableAdapter subcategoriesTableAdapter;
-        private System.Windows.Forms.BindingSource vendorsBindingSource;
-        private _CIS260_recycleDataSetTableAdapters.VendorsTableAdapter vendorsTableAdapter;
         private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
         private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
         private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
@@ -419,16 +478,33 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stateDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn zipDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn countryDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridView datView;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaterialID;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaterialName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vendorIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vendorNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn streetAddress1DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn streetAddress2DataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn stateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zipDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn countryDataGridViewTextBoxColumn;
+        private _CIS260_recycleDataSet _CIS260_recycleDataSet;
+        private System.Windows.Forms.BindingSource vendorsBindingSource;
+        private _CIS260_recycleDataSetTableAdapters.VendorsTableAdapter vendorsTableAdapter;
+        private _CIS260_recycleDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator vendorsBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton vendorsBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView vendorsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
