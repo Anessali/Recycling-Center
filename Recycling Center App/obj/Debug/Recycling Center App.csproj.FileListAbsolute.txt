@@ -43,3 +43,4 @@ C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Cent
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
+C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.frmDatabase.resources

@@ -51,6 +51,12 @@
     <Compile Include="BillOfLading.Designer.cs">
       <DependentUpon>BillOfLading.cs</DependentUpon>
     </Compile>
+    <Compile Include="database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="database.Designer.cs">
+      <DependentUpon>database.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +71,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_CIS260_recycleDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_CIS260_recycleDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BillOfLading.resx">
       <DependentUpon>BillOfLading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="database.resx">
+      <DependentUpon>database.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -93,6 +107,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_CIS260_recycleDataSet.xsc">
+      <DependentUpon>_CIS260_recycleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_CIS260_recycleDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_CIS260_recycleDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_CIS260_recycleDataSet.xss">
+      <DependentUpon>_CIS260_recycleDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
