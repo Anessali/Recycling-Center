@@ -28,7 +28,7 @@ namespace Recycling_Center_App
             int xCoordOne = 120,
                 xCoordTwo = xCoordOne + 310,
                 yCoordOne = 200;
-            int borderDistance = 20;
+            int borderDistance = 10;
             Pen pen = new Pen(Brushes.Black);
             #endregion
             fontSize = Convert.ToInt32(numFontSize.Text);
