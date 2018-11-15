@@ -24,14 +24,19 @@ namespace Recycling_Center_App
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             #region page setup variables
-            int fontSize;
+            int fontSize = 14;
             int xCoordOne = 120,
                 xCoordTwo = xCoordOne + 310,
                 yCoordOne = 200;
             int borderDistance = 10;
             Pen pen = new Pen(Brushes.Black);
+
+            string city = "City",
+                state = "State",
+                zip = "ZipCode",
+                address = "address",
+                billOfLadingNumber = "2265";
             #endregion
-            fontSize = Convert.ToInt32(numFontSize.Text);
             
 
             //Aligns text on page
@@ -45,13 +50,17 @@ namespace Recycling_Center_App
             Bitmap logo = new Bitmap(getLogo, new Size(Convert.ToInt32(getLogo.Width/1.4), Convert.ToInt32(getLogo.Height/1.4)));
             e.Graphics.DrawImage(logo, borderDistance + 10, borderDistance + 10);
 
+            //Adds other text
+            e.Graphics.DrawString("Bill of Lading", GetFont(32), Brushes.Black, new PointF(500, 50));
+            e.Graphics.DrawString("Bill of Lading", GetFont(fontSize), Brushes.Black, new PointF(50, 1040));
+            e.Graphics.DrawString(address, GetFont(fontSize), Brushes.Black, new PointF(50, 100));
+            e.Graphics.DrawString(city + ", " + state + " " + zip, GetFont(fontSize), Brushes.Black, new PointF(50, 120));
+            e.Graphics.DrawString("No.:\t\t" + billOfLadingNumber, GetFont(fontSize), Brushes.Black, new PointF(520, 150));
+
             //From text
             string fromText = String.Format("Name:\t{0}\nAddress:\t{1}\nDate:\t{2}\n" +
                 "Dept:\t{3}\nAccount:\t{4}", txtBxFromName.Text, txtBxFromAddress.Text,
                 txtBxFromDate.Text, txtBxFromDept.Text, txtBxFromAcct.Text);
-
-            //e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, e.PageBounds, format);
-
             e.Graphics.DrawString("From", GetFont(24), Brushes.Black, new PointF(xCoordOne, yCoordOne));
             e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, xCoordOne + 10, yCoordOne + 40);
 
@@ -61,10 +70,12 @@ namespace Recycling_Center_App
                 "Location:\t{3}, {4}\nAcct:\t{5}",
                 txtBxToName.Text, txtBxToCompany.Text, txtBxToStreet.Text, txtBxToCity.Text,
                 txtBxToState.Text, txtBxToAccount.Text);
-            //e.Graphics.DrawString(toText, GetFont(fontSize), Brushes.Black, e.PageBounds, format);
-
             e.Graphics.DrawString("To", GetFont(24), Brushes.Black, new PointF(xCoordTwo, yCoordOne));
             e.Graphics.DrawString(toText, GetFont(fontSize), Brushes.Black, new PointF(xCoordTwo + 10, yCoordOne + 40));
+
+            //Shipped items
+            e.Graphics.DrawString("Shipped items will go here", GetFont(16), Brushes.Black, new PointF(100, 470));
+            e.Graphics.DrawString("Further delivery info", GetFont(16), Brushes.Black, new PointF(100, 800));
 
         }
 
@@ -72,12 +83,12 @@ namespace Recycling_Center_App
         {
             printDiag.ShowHelp = true;
             printDiag.Document = printDocument1;
-            //printPreviewDialog1.ShowDialog();
-            DialogResult result = printDiag.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-            }
+            printPreviewDialog1.ShowDialog();
+            //DialogResult result = printDiag.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
+            //    printDocument1.Print();
+            //}
         }
         
         private Font GetFont(int fontSize)

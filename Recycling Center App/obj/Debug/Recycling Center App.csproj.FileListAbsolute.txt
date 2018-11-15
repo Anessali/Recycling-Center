@@ -94,7 +94,6 @@ C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycl
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
-C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
@@ -103,3 +102,4 @@ C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojAssemblyReference.cache
