@@ -16,14 +16,48 @@ namespace Recycling_Center_App
         public frmDatabase()
         {
             InitializeComponent();
-
-
+           // fillTable();
+            
         }
+
+       /* private void fillTable()
+        {
+            string getVendor = "Select VendorName from Vendors";
+            string getMaterial = "Select * from Materials";
+
+            try
+            {
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString =
+                "Data Source=stusql.ckwia8qkgyyj.us-east-1.rds.amazonaws.com;" +
+                "Initial Catalog=CIS260-recycle;" +
+                "User id= ph0859241;" +
+                "Password=0859241;";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(getVendor, conn);
+                SqlDataReader  reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    txtBoxData.Text = txtBoxData.Text + reader.GetValue(0) + "\n";
+                }
+
+                conn.Close();
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                //throw;
+            } 
+
+            
+        }*/
 
         private void frmDatabase_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_CIS260_recycleDataSet.Vendors' table. You can move, or remove it, as needed.
-            this.vendorsTableAdapter.Fill(this._CIS260_recycleDataSet.Vendors);
+            // TODO: This line of code loads data into the '_CIS260_recycleDataSet1.AllData' table. You can move, or remove it, as needed.
+            this.allDataTableAdapter.Fill(this._CIS260_recycleDataSet1.AllData);
 
         }
 
@@ -32,42 +66,9 @@ namespace Recycling_Center_App
 
         }
 
-        private void vendorsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void saveToolStripButton_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.vendorsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this._CIS260_recycleDataSet);
-
+            this.allDataTableAdapter.Update(this._CIS260_recycleDataSet1.AllData);
         }
-
-
-
-        /* private void saveToolStripButton_Click(object sender, EventArgs e)
-         {
-             DataSet ds = new DataSet();
-
-             string connetionString = null;
-              connetionString = @"Data Source=stusql.ckwia8qkgyyj.us-east-1.rds.amazonaws.com;";
-              SqlConnection cnn = new SqlConnection(connetionString);
-              SqlCommand cmd = new SqlCommand();
-              cmd.Connection = cnn;
-
-             /* cmd.Parameters.AddWithValue("@VendorID", datView.row);
-              cmd.Parameters.AddWithValue("@Hours", hours);
-
-             SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-             try
-             {
-                 da.Update(ds, "Vendors");
-                 MessageBox.Show("Saved");
-
-
-             }
-             catch (Exception ee)
-             {
-                 MessageBox.Show(ee.Message);
-             }
-         }*/
     }
 }

@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_CIS260_recycleDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_CIS260_recycleDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_CIS260_recycleDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BillOfLading.resx">
       <DependentUpon>BillOfLading.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +122,17 @@
     </None>
     <None Include="_CIS260_recycleDataSet.xss">
       <DependentUpon>_CIS260_recycleDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_CIS260_recycleDataSet1.xsc">
+      <DependentUpon>_CIS260_recycleDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_CIS260_recycleDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_CIS260_recycleDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_CIS260_recycleDataSet1.xss">
+      <DependentUpon>_CIS260_recycleDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
