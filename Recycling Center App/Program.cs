@@ -16,7 +16,7 @@ namespace Recycling_Center_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.Run(new BillOfLading());
         }
     }
 }

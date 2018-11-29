@@ -8,78 +8,98 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using System.Data.SqlClient;
 
 namespace Recycling_Center_App
 {
     public partial class BillOfLading : Form
     {
-        
+        CIS260_recycleDataContext dc;
 
         public BillOfLading()
         {
             InitializeComponent();
         }
-
-
+        
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
-            #region page setup variables
-            int fontSize;
+            #region Set variables
+            int fontSize = 14;
             int xCoordOne = 120,
                 xCoordTwo = xCoordOne + 310,
                 yCoordOne = 200;
             int borderDistance = 20;
+            string fromText = "",
+                toText = "";
             Pen pen = new Pen(Brushes.Black);
+            DateTime currentDate = DateTime.Now;
+            GetTableInfo getAllData = new GetTableInfo(dGridPackages);
             #endregion
-            fontSize = Convert.ToInt32(numFontSize.Text);
-            
 
+            #region Sets up and prints page
             //Aligns text on page
             StringFormat format = new StringFormat();
             format.Alignment = StringAlignment.Center;
-            
-            DrawBorders(e, borderDistance, pen);
+
+            //DrawBorders(e, borderDistance, pen);
 
             //Company logo
             Bitmap getLogo = new Bitmap(Properties.Resources.logo);
-            Bitmap logo = new Bitmap(getLogo, new Size(Convert.ToInt32(getLogo.Width/1.4), Convert.ToInt32(getLogo.Height/1.4)));
+            Bitmap logo = new Bitmap(getLogo, new Size(Convert.ToInt32(getLogo.Width / 1.4), Convert.ToInt32(getLogo.Height / 1.4)));
             e.Graphics.DrawImage(logo, borderDistance + 10, borderDistance + 10);
 
             //From text
-            string fromText = String.Format("Name:\t{0}\nAddress:\t{1}\nDate:\t{2}\n" +
-                "Dept:\t{3}\nAccount:\t{4}", txtBxFromName.Text, txtBxFromAddress.Text,
-                txtBxFromDate.Text, txtBxFromDept.Text, txtBxFromAcct.Text);
-
-            //e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, e.PageBounds, format);
-
-            e.Graphics.DrawString("From", GetFont(24), Brushes.Black, new PointF(xCoordOne, yCoordOne));
-            e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, xCoordOne + 10, yCoordOne + 40);
+            foreach (ComputerRecyclingLocation location in GetTableInfo.GetLocation())
+            {
+                //MessageBox.Show($"{location.City}");
+                fromText = $"Name:\t{location.LocationName}\n\t{location.StreetAddress1}\n" +
+                    $"\t{location.City}, {location.State} {location.Zip}\nDate:\t{currentDate}";
+            }
+            e.Graphics.DrawString("From", GetFont(24), Brushes.Black, new PointF(xCoordOne + 120, yCoordOne));
+            e.Graphics.DrawString(fromText, GetFont(fontSize), Brushes.Black, xCoordOne, yCoordOne + 40);
 
 
             //To text
-            string toText = String.Format("Name:\t{0}\nCompany: {1}\nStreet:\t{2}\n" +
-                "Location:\t{3}, {4}\nAcct:\t{5}",
-                txtBxToName.Text, txtBxToCompany.Text, txtBxToStreet.Text, txtBxToCity.Text,
-                txtBxToState.Text, txtBxToAccount.Text);
-            //e.Graphics.DrawString(toText, GetFont(fontSize), Brushes.Black, e.PageBounds, format);
-
-            e.Graphics.DrawString("To", GetFont(24), Brushes.Black, new PointF(xCoordTwo, yCoordOne));
+            e.Graphics.DrawString("To", GetFont(24), Brushes.Black, new PointF(xCoordTwo + 120, yCoordOne));
             e.Graphics.DrawString(toText, GetFont(fontSize), Brushes.Black, new PointF(xCoordTwo + 10, yCoordOne + 40));
 
+            //Prints info from selected box
+            //Setup
+            e.Graphics.DrawString("Number", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 200));
+            e.Graphics.DrawString("Of", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 225));
+            e.Graphics.DrawString("Items", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 250));
+            e.Graphics.DrawString("Kind of Package,", GetFont(16), Brushes.Black, new PointF(xCoordOne + 170, yCoordOne + 200));
+            e.Graphics.DrawString("Description of Articles,", GetFont(16), Brushes.Black, new PointF(xCoordOne + 150, yCoordOne + 225));
+            e.Graphics.DrawString("Special Marks, and Exceptions,", GetFont(16), Brushes.Black, new PointF(xCoordOne + 120, yCoordOne + 250));
+            e.Graphics.DrawString("Weight in Lbs.", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 200));
+            e.Graphics.DrawString("(Subject", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 225));
+            e.Graphics.DrawString("to Change)", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 250));
+            
+
+            e.Graphics.DrawLine(pen, xCoordOne - 30, yCoordOne + 280, xCoordTwo + 320, yCoordOne + 280);
+            //Info from AllData table
+            e.Graphics.DrawString($"{getAllData.GridInfoList()[7]}", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 300));
+            //e.Graphics.DrawString($"{getAllData.GridInfoList()[7]}", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 300));
+            e.Graphics.DrawString($"{getAllData.GridInfoList()[6]}", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 300));
+            e.Graphics.DrawString($"{(Convert.ToInt32(getAllData.GridInfoList()[6]) * Convert.ToInt32(getAllData.GridInfoList()[7]))}", GetFont(16), Brushes.Black, new PointF(xCoordOne + 570, yCoordOne + 300));
+            #endregion
         }
 
-        private void printBtn_Click_1(object sender, EventArgs e)
+        
+
+        private void printBtn_Click(object sender, EventArgs e)
         {
             printDiag.ShowHelp = true;
             printDiag.Document = printDocument1;
-            //printPreviewDialog1.ShowDialog();
-            DialogResult result = printDiag.ShowDialog();
-            if (result == DialogResult.OK)
-            {
-                printDocument1.Print();
-            }
+            printPreviewDialog1.ShowDialog();
+            //DialogResult result = printDiag.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
+            //    printDocument1.Print();
+            //}
+            
         }
-        
+
         private Font GetFont(int fontSize)
         {
             Font setFont = new Font("Times New Roman", fontSize, FontStyle.Regular);
@@ -108,19 +128,21 @@ namespace Recycling_Center_App
 
         private void BillOfLading_Load(object sender, EventArgs e)
         {
-            DateTime dateTest = new DateTime();
-            dateTest = DateTime.Now;
-            txtBxFromName.Text = "Tj Liggett";
-            txtBxFromAddress.Text = "Platform 9 and 3/4";
-            txtBxFromDate.Text = dateTest.ToString("MM/dd/yyyy");
-            txtBxFromDept.Text = "Some department name";
-            txtBxFromAcct.Text = "This tests account";
-            txtBxToName.Text = "Bob Ross";
-            txtBxToCompany.Text = "Bob Ross Inc";
-            txtBxToStreet.Text = "271 N Briar Lane";
-            txtBxToCity.Text = "Springfield";
-            txtBxToState.Text = "MO";
-            txtBxToAccount.Text = 2524524.ToString();
+            this.WindowState = FormWindowState.Maximized;
+            dGridPackages.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            //pulls boxes into datagrid
+            dc = new CIS260_recycleDataContext();
+            dGridPackages.DataSource = dc.AllDatas;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dGridPackages_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
