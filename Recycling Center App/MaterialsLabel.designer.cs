@@ -35,7 +35,6 @@
             this.lblTareWeight = new System.Windows.Forms.Label();
             this.lblInventoryDate = new System.Windows.Forms.Label();
             this.lblPallet = new System.Windows.Forms.Label();
-            this.lblNumber = new System.Windows.Forms.Label();
             this.txtMaterial = new System.Windows.Forms.TextBox();
             this.txtTareWeight = new System.Windows.Forms.TextBox();
             this.txtGrossWeight = new System.Windows.Forms.TextBox();
@@ -105,16 +104,6 @@
             this.lblPallet.TabIndex = 5;
             this.lblPallet.Text = "Pallet #:";
             // 
-            // lblNumber
-            // 
-            this.lblNumber.AutoSize = true;
-            this.lblNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumber.Location = new System.Drawing.Point(702, 45);
-            this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(138, 31);
-            this.lblNumber.TabIndex = 6;
-            this.lblNumber.Text = "Prime Key";
-            // 
             // txtMaterial
             // 
             this.txtMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -177,7 +166,6 @@
             this.Controls.Add(this.txtGrossWeight);
             this.Controls.Add(this.txtTareWeight);
             this.Controls.Add(this.txtMaterial);
-            this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.lblPallet);
             this.Controls.Add(this.lblInventoryDate);
             this.Controls.Add(this.lblTareWeight);
@@ -201,7 +189,6 @@
         private System.Windows.Forms.Label lblTareWeight;
         private System.Windows.Forms.Label lblInventoryDate;
         private System.Windows.Forms.Label lblPallet;
-        private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.TextBox txtMaterial;
         private System.Windows.Forms.TextBox txtTareWeight;
         private System.Windows.Forms.TextBox txtGrossWeight;

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="BillOfLading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_CIS260_recycleDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BillOfLading.resx">
       <DependentUpon>BillOfLading.cs</DependentUpon>
     </EmbeddedResource>

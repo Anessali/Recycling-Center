@@ -39,5 +39,11 @@ namespace Recycling_Center_App
             frmDatabase newData = new frmDatabase();
             newData.Show();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            AdminPage newAdmin = new AdminPage();
+            newAdmin.Show();
+        }
     }
 }

@@ -53,9 +53,6 @@
             this.countryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._CIS260_recycleDataSet = new Recycling_Center_App._CIS260_recycleDataSet();
             this.dataGrvData = new System.Windows.Forms.DataGridView();
-            this._CIS260_recycleDataSet1 = new Recycling_Center_App._CIS260_recycleDataSet1();
-            this.allDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.allDataTableAdapter = new Recycling_Center_App._CIS260_recycleDataSet1TableAdapters.AllDataTableAdapter();
             this.boxIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,13 +65,16 @@
             this.lCDGoodScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lCDBasScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.processedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._CIS260_recycleDataSet1 = new Recycling_Center_App._CIS260_recycleDataSet1();
+            this.allDataTableAdapter = new Recycling_Center_App._CIS260_recycleDataSet1TableAdapters.AllDataTableAdapter();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
@@ -240,22 +240,8 @@
             this.dataGrvData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGrvData.Location = new System.Drawing.Point(0, 0);
             this.dataGrvData.Name = "dataGrvData";
-            this.dataGrvData.Size = new System.Drawing.Size(1149, 421);
+            this.dataGrvData.Size = new System.Drawing.Size(1244, 421);
             this.dataGrvData.TabIndex = 0;
-            // 
-            // _CIS260_recycleDataSet1
-            // 
-            this._CIS260_recycleDataSet1.DataSetName = "_CIS260_recycleDataSet1";
-            this._CIS260_recycleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // allDataBindingSource
-            // 
-            this.allDataBindingSource.DataMember = "AllData";
-            this.allDataBindingSource.DataSource = this._CIS260_recycleDataSet1;
-            // 
-            // allDataTableAdapter
-            // 
-            this.allDataTableAdapter.ClearBeforeFill = true;
             // 
             // boxIDDataGridViewTextBoxColumn
             // 
@@ -330,6 +316,20 @@
             this.processedDateDataGridViewTextBoxColumn.HeaderText = "ProcessedDate";
             this.processedDateDataGridViewTextBoxColumn.Name = "processedDateDataGridViewTextBoxColumn";
             // 
+            // allDataBindingSource
+            // 
+            this.allDataBindingSource.DataMember = "AllData";
+            this.allDataBindingSource.DataSource = this._CIS260_recycleDataSet1;
+            // 
+            // _CIS260_recycleDataSet1
+            // 
+            this._CIS260_recycleDataSet1.DataSetName = "_CIS260_recycleDataSet1";
+            this._CIS260_recycleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // allDataTableAdapter
+            // 
+            this.allDataTableAdapter.ClearBeforeFill = true;
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -341,25 +341,6 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.AutoScroll = true;
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGrvData);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1149, 421);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(1149, 446);
-            this.toolStripContainer1.TabIndex = 2;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // toolStripContainer1.TopToolStripPanel
-            // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
-            // 
             // saveToolStripButton
             // 
             this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -370,11 +351,30 @@
             this.saveToolStripButton.Text = "&Save";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.AutoScroll = true;
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGrvData);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1244, 421);
+            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.Size = new System.Drawing.Size(1244, 446);
+            this.toolStripContainer1.TabIndex = 2;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // toolStripContainer1.TopToolStripPanel
+            // 
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
+            // 
             // frmDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 446);
+            this.ClientSize = new System.Drawing.Size(1244, 446);
             this.Controls.Add(this.toolStripContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDatabase";
@@ -382,8 +382,8 @@
             this.Load += new System.EventHandler(this.frmDatabase_Load);
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
