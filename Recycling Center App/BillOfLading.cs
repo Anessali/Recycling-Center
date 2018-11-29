@@ -10,6 +10,12 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Data.SqlClient;
 
+/* ******************************************************************* *
+ * Contact Tj Liggett if you have any questions about the BillOfLading *
+ * Email: liggetttj@gmail.com                                          *
+ * Github: https://github.com/ShiroNya                                 *
+ * ******************************************************************* */
+
 namespace Recycling_Center_App
 {
     public partial class BillOfLading : Form
@@ -33,6 +39,7 @@ namespace Recycling_Center_App
                 toText = "";
             Pen pen = new Pen(Brushes.Black);
             DateTime currentDate = DateTime.Now;
+            int locationId = 1;
             GetTableInfo getAllData = new GetTableInfo(dGridPackages);
             #endregion
 
@@ -49,7 +56,7 @@ namespace Recycling_Center_App
             e.Graphics.DrawImage(logo, borderDistance + 10, borderDistance + 10);
 
             //From text
-            foreach (ComputerRecyclingLocation location in GetTableInfo.GetLocation())
+            foreach (ComputerRecyclingLocation location in GetTableInfo.GetLocation(locationId))
             {
                 //MessageBox.Show($"{location.City}");
                 fromText = $"Name:\t{location.LocationName}\n\t{location.StreetAddress1}\n" +

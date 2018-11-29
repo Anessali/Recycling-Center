@@ -23,7 +23,7 @@ namespace Recycling_Center_App
         /// to get info at ID 1.
         /// </summary>
         /// <returns></returns>
-        public static IQueryable<ComputerRecyclingLocation> GetLocation()
+        public static IQueryable<ComputerRecyclingLocation> GetLocation(int id)
         {
            CIS260_recycleDataContext  dc = new CIS260_recycleDataContext();
            IQueryable<ComputerRecyclingLocation> query =
