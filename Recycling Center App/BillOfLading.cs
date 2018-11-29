@@ -20,7 +20,7 @@ namespace Recycling_Center_App
         {
             InitializeComponent();
         }
-        
+
         private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
         {
             #region Set variables
@@ -74,7 +74,7 @@ namespace Recycling_Center_App
             e.Graphics.DrawString("Weight in Lbs.", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 200));
             e.Graphics.DrawString("(Subject", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 225));
             e.Graphics.DrawString("to Change)", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 250));
-            
+
 
             e.Graphics.DrawLine(pen, xCoordOne - 30, yCoordOne + 280, xCoordTwo + 320, yCoordOne + 280);
             //Info from AllData table
@@ -85,7 +85,7 @@ namespace Recycling_Center_App
             #endregion
         }
 
-        
+
 
         private void printBtn_Click(object sender, EventArgs e)
         {
@@ -97,7 +97,7 @@ namespace Recycling_Center_App
             //{
             //    printDocument1.Print();
             //}
-            
+
         }
 
         private Font GetFont(int fontSize)
@@ -105,7 +105,7 @@ namespace Recycling_Center_App
             Font setFont = new Font("Times New Roman", fontSize, FontStyle.Regular);
             return setFont;
         }
-        
+
         private void DrawBorders(PrintPageEventArgs e, int borderDistance, Pen pen)
         {
             int xMargin = e.PageBounds.Width,
