@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CIS260-recycle">
+  <DataContextMoniker Name="/CIS260_recycleDataContext" />
+  <nestedChildShapes>
+    <classShape Id="b45a386b-31f0-43e1-91d4-8effcc06bc77" absoluteBounds="0.5, 1.125, 2, 3.1170068359375">
+      <DataClassMoniker Name="/CIS260_recycleDataContext/AllData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a137a060-3e58-4f13-b525-30c4879a2473" absoluteBounds="0.515, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30740700-50b2-4d2a-aae9-db2f6db08a58" absoluteBounds="2.875, 1.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/CIS260_recycleDataContext/Vendor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="148d3e55-dcf7-4f72-ab40-c21d6fa108ab" absoluteBounds="2.89, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="78e5c128-256e-4091-b6e2-d47537ca250a" absoluteBounds="0.5, 4.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/CIS260_recycleDataContext/ComputerRecyclingLocation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7eca160d-6e0d-44ad-9f7a-f1f368c32b78" absoluteBounds="0.515, 4.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CIS260-recycle" Class="CIS260_recycleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=stusql.ckwia8qkgyyj.us-east-1.rds.amazonaws.com;Initial Catalog=CIS260-recycle;Persist Security Info=True;User ID=tl0464984" SettingsObjectName="Recycling_Center_App.Properties.Settings" SettingsPropertyName="CIS260_recycleConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AllData" Member="AllDatas">
+    <Type Name="AllData">
+      <Column Name="BoxID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Subcategory" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="statuss" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InventoryDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Vendor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NetWeight" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gaylord" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LCDGoodScreen" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LCDBasScreen" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ProcessedDate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vendors" Member="Vendors">
+    <Type Name="Vendor">
+      <Column Name="VendorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VendorName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="StreetAddress1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="StreetAddress2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ComputerRecyclingLocations" Member="ComputerRecyclingLocations">
+    <Type Name="ComputerRecyclingLocation">
+      <Column Name="LocationID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LocationName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="StreetAddress1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="StreetAddress2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Zip" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
