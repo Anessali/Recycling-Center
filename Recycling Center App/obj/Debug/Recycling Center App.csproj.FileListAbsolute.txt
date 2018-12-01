@@ -44,58 +44,7 @@ C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Cent
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
-<<<<<<< HEAD
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
-D:\Google Drive\Programming\Preston App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
-D:\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
-C:\Users\Shiro\Google Drive\Programming\Main App\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
-C:\Users\liggettt\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
-=======
 C:\Users\prest_000\Documents\SchoolWork\Capstone\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminPage.resources
->>>>>>> origin/projectsWithMenu
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
