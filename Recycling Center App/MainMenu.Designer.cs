@@ -32,6 +32,7 @@
             this.btnBillLading = new System.Windows.Forms.Button();
             this.btnMaterials = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnDatabase = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,18 +59,29 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 144);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(482, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // btnDatabase
+            // 
+            this.btnDatabase.Location = new System.Drawing.Point(365, 55);
+            this.btnDatabase.Name = "btnDatabase";
+            this.btnDatabase.Size = new System.Drawing.Size(96, 40);
+            this.btnDatabase.TabIndex = 3;
+            this.btnDatabase.Text = "Database";
+            this.btnDatabase.UseVisualStyleBackColor = true;
+            this.btnDatabase.Click += new System.EventHandler(this.btnDatabase_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 272);
+            this.Controls.Add(this.btnDatabase);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnMaterials);
             this.Controls.Add(this.btnBillLading);
@@ -88,6 +100,7 @@
         private System.Windows.Forms.Button btnBillLading;
         private System.Windows.Forms.Button btnMaterials;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnDatabase;
     }
 }
 
