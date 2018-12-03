@@ -285,7 +285,7 @@ namespace Recycling_Center_App {
             
             private global::System.Data.DataColumn columnSubcategory;
             
-            private global::System.Data.DataColumn columnstatuss;
+            private global::System.Data.DataColumn columnStatusOfBox;
             
             private global::System.Data.DataColumn columnInventoryDate;
             
@@ -299,7 +299,7 @@ namespace Recycling_Center_App {
             
             private global::System.Data.DataColumn columnLCDGoodScreen;
             
-            private global::System.Data.DataColumn columnLCDBasScreen;
+            private global::System.Data.DataColumn columnLCDBadScreen;
             
             private global::System.Data.DataColumn columnProcessedDate;
             
@@ -362,9 +362,9 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn statussColumn {
+            public global::System.Data.DataColumn StatusOfBoxColumn {
                 get {
-                    return this.columnstatuss;
+                    return this.columnStatusOfBox;
                 }
             }
             
@@ -418,9 +418,9 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn LCDBasScreenColumn {
+            public global::System.Data.DataColumn LCDBadScreenColumn {
                 get {
-                    return this.columnLCDBasScreen;
+                    return this.columnLCDBadScreen;
                 }
             }
             
@@ -469,20 +469,20 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public AllDataRow AddAllDataRow(string Category, string Subcategory, string statuss, string InventoryDate, string Vendor, string NetWeight, int Qty, string Gaylord, string LCDGoodScreen, string LCDBasScreen, string ProcessedDate) {
+            public AllDataRow AddAllDataRow(string Category, string Subcategory, string StatusOfBox, string InventoryDate, string Vendor, string NetWeight, int Qty, string Gaylord, string LCDGoodScreen, string LCDBadScreen, string ProcessedDate) {
                 AllDataRow rowAllDataRow = ((AllDataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Category,
                         Subcategory,
-                        statuss,
+                        StatusOfBox,
                         InventoryDate,
                         Vendor,
                         NetWeight,
                         Qty,
                         Gaylord,
                         LCDGoodScreen,
-                        LCDBasScreen,
+                        LCDBadScreen,
                         ProcessedDate};
                 rowAllDataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAllDataRow);
@@ -516,14 +516,14 @@ namespace Recycling_Center_App {
                 this.columnBoxID = base.Columns["BoxID"];
                 this.columnCategory = base.Columns["Category"];
                 this.columnSubcategory = base.Columns["Subcategory"];
-                this.columnstatuss = base.Columns["statuss"];
+                this.columnStatusOfBox = base.Columns["StatusOfBox"];
                 this.columnInventoryDate = base.Columns["InventoryDate"];
                 this.columnVendor = base.Columns["Vendor"];
                 this.columnNetWeight = base.Columns["NetWeight"];
                 this.columnQty = base.Columns["Qty"];
                 this.columnGaylord = base.Columns["Gaylord"];
                 this.columnLCDGoodScreen = base.Columns["LCDGoodScreen"];
-                this.columnLCDBasScreen = base.Columns["LCDBasScreen"];
+                this.columnLCDBadScreen = base.Columns["LCDBadScreen"];
                 this.columnProcessedDate = base.Columns["ProcessedDate"];
             }
             
@@ -536,8 +536,8 @@ namespace Recycling_Center_App {
                 base.Columns.Add(this.columnCategory);
                 this.columnSubcategory = new global::System.Data.DataColumn("Subcategory", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSubcategory);
-                this.columnstatuss = new global::System.Data.DataColumn("statuss", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnstatuss);
+                this.columnStatusOfBox = new global::System.Data.DataColumn("StatusOfBox", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatusOfBox);
                 this.columnInventoryDate = new global::System.Data.DataColumn("InventoryDate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnInventoryDate);
                 this.columnVendor = new global::System.Data.DataColumn("Vendor", typeof(string), null, global::System.Data.MappingType.Element);
@@ -550,8 +550,8 @@ namespace Recycling_Center_App {
                 base.Columns.Add(this.columnGaylord);
                 this.columnLCDGoodScreen = new global::System.Data.DataColumn("LCDGoodScreen", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLCDGoodScreen);
-                this.columnLCDBasScreen = new global::System.Data.DataColumn("LCDBasScreen", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLCDBasScreen);
+                this.columnLCDBadScreen = new global::System.Data.DataColumn("LCDBadScreen", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLCDBadScreen);
                 this.columnProcessedDate = new global::System.Data.DataColumn("ProcessedDate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProcessedDate);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -564,13 +564,13 @@ namespace Recycling_Center_App {
                 this.columnBoxID.Unique = true;
                 this.columnCategory.MaxLength = 50;
                 this.columnSubcategory.MaxLength = 50;
-                this.columnstatuss.MaxLength = 50;
+                this.columnStatusOfBox.MaxLength = 50;
                 this.columnInventoryDate.MaxLength = 50;
                 this.columnVendor.MaxLength = 50;
                 this.columnNetWeight.MaxLength = 50;
                 this.columnGaylord.MaxLength = 50;
                 this.columnLCDGoodScreen.MaxLength = 50;
-                this.columnLCDBasScreen.MaxLength = 50;
+                this.columnLCDBadScreen.MaxLength = 50;
                 this.columnProcessedDate.MaxLength = 50;
             }
             
@@ -757,17 +757,17 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string statuss {
+            public string StatusOfBox {
                 get {
                     try {
-                        return ((string)(this[this.tableAllData.statussColumn]));
+                        return ((string)(this[this.tableAllData.StatusOfBoxColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'statuss\' in table \'AllData\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'StatusOfBox\' in table \'AllData\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAllData.statussColumn] = value;
+                    this[this.tableAllData.StatusOfBoxColumn] = value;
                 }
             }
             
@@ -869,17 +869,17 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string LCDBasScreen {
+            public string LCDBadScreen {
                 get {
                     try {
-                        return ((string)(this[this.tableAllData.LCDBasScreenColumn]));
+                        return ((string)(this[this.tableAllData.LCDBadScreenColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LCDBasScreen\' in table \'AllData\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'LCDBadScreen\' in table \'AllData\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAllData.LCDBasScreenColumn] = value;
+                    this[this.tableAllData.LCDBadScreenColumn] = value;
                 }
             }
             
@@ -925,14 +925,14 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsstatussNull() {
-                return this.IsNull(this.tableAllData.statussColumn);
+            public bool IsStatusOfBoxNull() {
+                return this.IsNull(this.tableAllData.StatusOfBoxColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetstatussNull() {
-                this[this.tableAllData.statussColumn] = global::System.Convert.DBNull;
+            public void SetStatusOfBoxNull() {
+                this[this.tableAllData.StatusOfBoxColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1009,14 +1009,14 @@ namespace Recycling_Center_App {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsLCDBasScreenNull() {
-                return this.IsNull(this.tableAllData.LCDBasScreenColumn);
+            public bool IsLCDBadScreenNull() {
+                return this.IsNull(this.tableAllData.LCDBadScreenColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetLCDBasScreenNull() {
-                this[this.tableAllData.LCDBasScreenColumn] = global::System.Convert.DBNull;
+            public void SetLCDBadScreenNull() {
+                this[this.tableAllData.LCDBadScreenColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1194,27 +1194,27 @@ namespace Recycling_Center_App._CIS260_recycleDataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("BoxID", "BoxID");
             tableMapping.ColumnMappings.Add("Category", "Category");
             tableMapping.ColumnMappings.Add("Subcategory", "Subcategory");
-            tableMapping.ColumnMappings.Add("statuss", "statuss");
+            tableMapping.ColumnMappings.Add("StatusOfBox", "StatusOfBox");
             tableMapping.ColumnMappings.Add("InventoryDate", "InventoryDate");
             tableMapping.ColumnMappings.Add("Vendor", "Vendor");
             tableMapping.ColumnMappings.Add("NetWeight", "NetWeight");
             tableMapping.ColumnMappings.Add("Qty", "Qty");
             tableMapping.ColumnMappings.Add("Gaylord", "Gaylord");
             tableMapping.ColumnMappings.Add("LCDGoodScreen", "LCDGoodScreen");
-            tableMapping.ColumnMappings.Add("LCDBasScreen", "LCDBasScreen");
+            tableMapping.ColumnMappings.Add("LCDBadScreen", "LCDBadScreen");
             tableMapping.ColumnMappings.Add("ProcessedDate", "ProcessedDate");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AllData] WHERE (([BoxID] = @Original_BoxID) AND ((@IsNull_Category = 1 AND [Category] IS NULL) OR ([Category] = @Original_Category)) AND ((@IsNull_Subcategory = 1 AND [Subcategory] IS NULL) OR ([Subcategory] = @Original_Subcategory)) AND ((@IsNull_statuss = 1 AND [statuss] IS NULL) OR ([statuss] = @Original_statuss)) AND ((@IsNull_InventoryDate = 1 AND [InventoryDate] IS NULL) OR ([InventoryDate] = @Original_InventoryDate)) AND ((@IsNull_Vendor = 1 AND [Vendor] IS NULL) OR ([Vendor] = @Original_Vendor)) AND ((@IsNull_NetWeight = 1 AND [NetWeight] IS NULL) OR ([NetWeight] = @Original_NetWeight)) AND ((@IsNull_Qty = 1 AND [Qty] IS NULL) OR ([Qty] = @Original_Qty)) AND ((@IsNull_Gaylord = 1 AND [Gaylord] IS NULL) OR ([Gaylord] = @Original_Gaylord)) AND ((@IsNull_LCDGoodScreen = 1 AND [LCDGoodScreen] IS NULL) OR ([LCDGoodScreen] = @Original_LCDGoodScreen)) AND ((@IsNull_LCDBasScreen = 1 AND [LCDBasScreen] IS NULL) OR ([LCDBasScreen] = @Original_LCDBasScreen)) AND ((@IsNull_ProcessedDate = 1 AND [ProcessedDate] IS NULL) OR ([ProcessedDate] = @Original_ProcessedDate)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[AllData] WHERE (([BoxID] = @Original_BoxID) AND ((@IsNull_Category = 1 AND [Category] IS NULL) OR ([Category] = @Original_Category)) AND ((@IsNull_Subcategory = 1 AND [Subcategory] IS NULL) OR ([Subcategory] = @Original_Subcategory)) AND ((@IsNull_StatusOfBox = 1 AND [StatusOfBox] IS NULL) OR ([StatusOfBox] = @Original_StatusOfBox)) AND ((@IsNull_InventoryDate = 1 AND [InventoryDate] IS NULL) OR ([InventoryDate] = @Original_InventoryDate)) AND ((@IsNull_Vendor = 1 AND [Vendor] IS NULL) OR ([Vendor] = @Original_Vendor)) AND ((@IsNull_NetWeight = 1 AND [NetWeight] IS NULL) OR ([NetWeight] = @Original_NetWeight)) AND ((@IsNull_Qty = 1 AND [Qty] IS NULL) OR ([Qty] = @Original_Qty)) AND ((@IsNull_Gaylord = 1 AND [Gaylord] IS NULL) OR ([Gaylord] = @Original_Gaylord)) AND ((@IsNull_LCDGoodScreen = 1 AND [LCDGoodScreen] IS NULL) OR ([LCDGoodScreen] = @Original_LCDGoodScreen)) AND ((@IsNull_LCDBadScreen = 1 AND [LCDBadScreen] IS NULL) OR ([LCDBadScreen] = @Original_LCDBadScreen)) AND ((@IsNull_ProcessedDate = 1 AND [ProcessedDate] IS NULL) OR ([ProcessedDate] = @Original_ProcessedDate)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BoxID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BoxID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Category", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Subcategory", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Subcategory", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_statuss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_statuss", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StatusOfBox", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StatusOfBox", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InventoryDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InventoryDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Vendor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vendor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1227,67 +1227,67 @@ namespace Recycling_Center_App._CIS260_recycleDataSet1TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gaylord", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gaylord", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDGoodScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDGoodScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDBasScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDBasScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDBadScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDBadScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ProcessedDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProcessedDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AllData] ([Category], [Subcategory], [statuss], [InventoryDate], [Vendor], [NetWeight], [Qty], [Gaylord], [LCDGoodScreen], [LCDBasScreen], [ProcessedDate]) VALUES (@Category, @Subcategory, @statuss, @InventoryDate, @Vendor, @NetWeight, @Qty, @Gaylord, @LCDGoodScreen, @LCDBasScreen, @ProcessedDate);
-SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodScreen, LCDBasScreen, ProcessedDate FROM AllData WHERE (BoxID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[AllData] ([Category], [Subcategory], [StatusOfBox], [InventoryDate], [Vendor], [NetWeight], [Qty], [Gaylord], [LCDGoodScreen], [LCDBadScreen], [ProcessedDate]) VALUES (@Category, @Subcategory, @StatusOfBox, @InventoryDate, @Vendor, @NetWeight, @Qty, @Gaylord, @LCDGoodScreen, @LCDBadScreen, @ProcessedDate);
+SELECT BoxID, Category, Subcategory, StatusOfBox, InventoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodScreen, LCDBadScreen, ProcessedDate FROM AllData WHERE (BoxID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subcategory", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@statuss", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StatusOfBox", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InventoryDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vendor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vendor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NetWeight", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NetWeight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Qty", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gaylord", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gaylord", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDGoodScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDBasScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDBadScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProcessedDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
             this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[AllData] SET [Category] = @Category, [Subcategory] = @Subcategory, " +
-                "[statuss] = @statuss, [InventoryDate] = @InventoryDate, [Vendor] = @Vendor, [Net" +
-                "Weight] = @NetWeight, [Qty] = @Qty, [Gaylord] = @Gaylord, [LCDGoodScreen] = @LCD" +
-                "GoodScreen, [LCDBasScreen] = @LCDBasScreen, [ProcessedDate] = @ProcessedDate WHE" +
-                "RE (([BoxID] = @Original_BoxID) AND ((@IsNull_Category = 1 AND [Category] IS NUL" +
-                "L) OR ([Category] = @Original_Category)) AND ((@IsNull_Subcategory = 1 AND [Subc" +
-                "ategory] IS NULL) OR ([Subcategory] = @Original_Subcategory)) AND ((@IsNull_stat" +
-                "uss = 1 AND [statuss] IS NULL) OR ([statuss] = @Original_statuss)) AND ((@IsNull" +
-                "_InventoryDate = 1 AND [InventoryDate] IS NULL) OR ([InventoryDate] = @Original_" +
-                "InventoryDate)) AND ((@IsNull_Vendor = 1 AND [Vendor] IS NULL) OR ([Vendor] = @O" +
-                "riginal_Vendor)) AND ((@IsNull_NetWeight = 1 AND [NetWeight] IS NULL) OR ([NetWe" +
-                "ight] = @Original_NetWeight)) AND ((@IsNull_Qty = 1 AND [Qty] IS NULL) OR ([Qty]" +
-                " = @Original_Qty)) AND ((@IsNull_Gaylord = 1 AND [Gaylord] IS NULL) OR ([Gaylord" +
-                "] = @Original_Gaylord)) AND ((@IsNull_LCDGoodScreen = 1 AND [LCDGoodScreen] IS N" +
-                "ULL) OR ([LCDGoodScreen] = @Original_LCDGoodScreen)) AND ((@IsNull_LCDBasScreen " +
-                "= 1 AND [LCDBasScreen] IS NULL) OR ([LCDBasScreen] = @Original_LCDBasScreen)) AN" +
-                "D ((@IsNull_ProcessedDate = 1 AND [ProcessedDate] IS NULL) OR ([ProcessedDate] =" +
-                " @Original_ProcessedDate)));\r\nSELECT BoxID, Category, Subcategory, statuss, Inve" +
-                "ntoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodScreen, LCDBasScreen, Process" +
-                "edDate FROM AllData WHERE (BoxID = @BoxID)";
+                "[StatusOfBox] = @StatusOfBox, [InventoryDate] = @InventoryDate, [Vendor] = @Vend" +
+                "or, [NetWeight] = @NetWeight, [Qty] = @Qty, [Gaylord] = @Gaylord, [LCDGoodScreen" +
+                "] = @LCDGoodScreen, [LCDBadScreen] = @LCDBadScreen, [ProcessedDate] = @Processed" +
+                "Date WHERE (([BoxID] = @Original_BoxID) AND ((@IsNull_Category = 1 AND [Category" +
+                "] IS NULL) OR ([Category] = @Original_Category)) AND ((@IsNull_Subcategory = 1 A" +
+                "ND [Subcategory] IS NULL) OR ([Subcategory] = @Original_Subcategory)) AND ((@IsN" +
+                "ull_StatusOfBox = 1 AND [StatusOfBox] IS NULL) OR ([StatusOfBox] = @Original_Sta" +
+                "tusOfBox)) AND ((@IsNull_InventoryDate = 1 AND [InventoryDate] IS NULL) OR ([Inv" +
+                "entoryDate] = @Original_InventoryDate)) AND ((@IsNull_Vendor = 1 AND [Vendor] IS" +
+                " NULL) OR ([Vendor] = @Original_Vendor)) AND ((@IsNull_NetWeight = 1 AND [NetWei" +
+                "ght] IS NULL) OR ([NetWeight] = @Original_NetWeight)) AND ((@IsNull_Qty = 1 AND " +
+                "[Qty] IS NULL) OR ([Qty] = @Original_Qty)) AND ((@IsNull_Gaylord = 1 AND [Gaylor" +
+                "d] IS NULL) OR ([Gaylord] = @Original_Gaylord)) AND ((@IsNull_LCDGoodScreen = 1 " +
+                "AND [LCDGoodScreen] IS NULL) OR ([LCDGoodScreen] = @Original_LCDGoodScreen)) AND" +
+                " ((@IsNull_LCDBadScreen = 1 AND [LCDBadScreen] IS NULL) OR ([LCDBadScreen] = @Or" +
+                "iginal_LCDBadScreen)) AND ((@IsNull_ProcessedDate = 1 AND [ProcessedDate] IS NUL" +
+                "L) OR ([ProcessedDate] = @Original_ProcessedDate)));\r\nSELECT BoxID, Category, Su" +
+                "bcategory, StatusOfBox, InventoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodS" +
+                "creen, LCDBadScreen, ProcessedDate FROM AllData WHERE (BoxID = @BoxID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Subcategory", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@statuss", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StatusOfBox", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@InventoryDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vendor", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vendor", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NetWeight", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NetWeight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Qty", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Qty", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gaylord", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gaylord", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDGoodScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDBasScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LCDBadScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProcessedDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BoxID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BoxID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Category", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Category", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Category", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Subcategory", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Subcategory", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Subcategory", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_statuss", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_statuss", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "statuss", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StatusOfBox", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StatusOfBox", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StatusOfBox", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_InventoryDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_InventoryDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "InventoryDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Vendor", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Vendor", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -1300,8 +1300,8 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Gaylord", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gaylord", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDGoodScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDGoodScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDGoodScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDBasScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDBasScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBasScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LCDBadScreen", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LCDBadScreen", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LCDBadScreen", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ProcessedDate", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProcessedDate", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProcessedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BoxID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "BoxID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1311,7 +1311,7 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Recycling_Center_App.Properties.Settings.Default.CIS260_recycleConnectionString;
+            this._connection.ConnectionString = global::Recycling_Center_App.Properties.Settings.Default.CIS260_recycleConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1320,8 +1320,8 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, Q" +
-                "ty, Gaylord, LCDGoodScreen, LCDBasScreen, ProcessedDate FROM dbo.AllData";
+            this._commandCollection[0].CommandText = "SELECT BoxID, Category, Subcategory, StatusOfBox, InventoryDate, Vendor, NetWeigh" +
+                "t, Qty, Gaylord, LCDGoodScreen, LCDBadScreen, ProcessedDate FROM dbo.AllData";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1382,7 +1382,7 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_BoxID, string Original_Category, string Original_Subcategory, string Original_statuss, string Original_InventoryDate, string Original_Vendor, string Original_NetWeight, global::System.Nullable<int> Original_Qty, string Original_Gaylord, string Original_LCDGoodScreen, string Original_LCDBasScreen, string Original_ProcessedDate) {
+        public virtual int Delete(int Original_BoxID, string Original_Category, string Original_Subcategory, string Original_StatusOfBox, string Original_InventoryDate, string Original_Vendor, string Original_NetWeight, global::System.Nullable<int> Original_Qty, string Original_Gaylord, string Original_LCDGoodScreen, string Original_LCDBadScreen, string Original_ProcessedDate) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_BoxID));
             if ((Original_Category == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -1400,13 +1400,13 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Subcategory));
             }
-            if ((Original_statuss == null)) {
+            if ((Original_StatusOfBox == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_statuss));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_StatusOfBox));
             }
             if ((Original_InventoryDate == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
@@ -1456,13 +1456,13 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_LCDGoodScreen));
             }
-            if ((Original_LCDBasScreen == null)) {
+            if ((Original_LCDBadScreen == null)) {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[20].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_LCDBasScreen));
+                this.Adapter.DeleteCommand.Parameters[20].Value = ((string)(Original_LCDBadScreen));
             }
             if ((Original_ProcessedDate == null)) {
                 this.Adapter.DeleteCommand.Parameters[21].Value = ((object)(1));
@@ -1492,7 +1492,7 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Category, string Subcategory, string statuss, string InventoryDate, string Vendor, string NetWeight, global::System.Nullable<int> Qty, string Gaylord, string LCDGoodScreen, string LCDBasScreen, string ProcessedDate) {
+        public virtual int Insert(string Category, string Subcategory, string StatusOfBox, string InventoryDate, string Vendor, string NetWeight, global::System.Nullable<int> Qty, string Gaylord, string LCDGoodScreen, string LCDBadScreen, string ProcessedDate) {
             if ((Category == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1505,11 +1505,11 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Subcategory));
             }
-            if ((statuss == null)) {
+            if ((StatusOfBox == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(statuss));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(StatusOfBox));
             }
             if ((InventoryDate == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -1547,11 +1547,11 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             else {
                 this.Adapter.InsertCommand.Parameters[8].Value = ((string)(LCDGoodScreen));
             }
-            if ((LCDBasScreen == null)) {
+            if ((LCDBadScreen == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(LCDBasScreen));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(LCDBadScreen));
             }
             if ((ProcessedDate == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
@@ -1582,26 +1582,26 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
         public virtual int Update(
                     string Category, 
                     string Subcategory, 
-                    string statuss, 
+                    string StatusOfBox, 
                     string InventoryDate, 
                     string Vendor, 
                     string NetWeight, 
                     global::System.Nullable<int> Qty, 
                     string Gaylord, 
                     string LCDGoodScreen, 
-                    string LCDBasScreen, 
+                    string LCDBadScreen, 
                     string ProcessedDate, 
                     int Original_BoxID, 
                     string Original_Category, 
                     string Original_Subcategory, 
-                    string Original_statuss, 
+                    string Original_StatusOfBox, 
                     string Original_InventoryDate, 
                     string Original_Vendor, 
                     string Original_NetWeight, 
                     global::System.Nullable<int> Original_Qty, 
                     string Original_Gaylord, 
                     string Original_LCDGoodScreen, 
-                    string Original_LCDBasScreen, 
+                    string Original_LCDBadScreen, 
                     string Original_ProcessedDate, 
                     int BoxID) {
             if ((Category == null)) {
@@ -1616,11 +1616,11 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Subcategory));
             }
-            if ((statuss == null)) {
+            if ((StatusOfBox == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(statuss));
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(StatusOfBox));
             }
             if ((InventoryDate == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -1658,11 +1658,11 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
             else {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(LCDGoodScreen));
             }
-            if ((LCDBasScreen == null)) {
+            if ((LCDBadScreen == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(LCDBasScreen));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(LCDBadScreen));
             }
             if ((ProcessedDate == null)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
@@ -1687,13 +1687,13 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Subcategory));
             }
-            if ((Original_statuss == null)) {
+            if ((Original_StatusOfBox == null)) {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_statuss));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_StatusOfBox));
             }
             if ((Original_InventoryDate == null)) {
                 this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
@@ -1743,13 +1743,13 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_LCDGoodScreen));
             }
-            if ((Original_LCDBasScreen == null)) {
+            if ((Original_LCDBadScreen == null)) {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[31].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[30].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_LCDBasScreen));
+                this.Adapter.UpdateCommand.Parameters[31].Value = ((string)(Original_LCDBadScreen));
             }
             if ((Original_ProcessedDate == null)) {
                 this.Adapter.UpdateCommand.Parameters[32].Value = ((object)(1));
@@ -1783,28 +1783,28 @@ SELECT BoxID, Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, 
         public virtual int Update(
                     string Category, 
                     string Subcategory, 
-                    string statuss, 
+                    string StatusOfBox, 
                     string InventoryDate, 
                     string Vendor, 
                     string NetWeight, 
                     global::System.Nullable<int> Qty, 
                     string Gaylord, 
                     string LCDGoodScreen, 
-                    string LCDBasScreen, 
+                    string LCDBadScreen, 
                     string ProcessedDate, 
                     int Original_BoxID, 
                     string Original_Category, 
                     string Original_Subcategory, 
-                    string Original_statuss, 
+                    string Original_StatusOfBox, 
                     string Original_InventoryDate, 
                     string Original_Vendor, 
                     string Original_NetWeight, 
                     global::System.Nullable<int> Original_Qty, 
                     string Original_Gaylord, 
                     string Original_LCDGoodScreen, 
-                    string Original_LCDBasScreen, 
+                    string Original_LCDBadScreen, 
                     string Original_ProcessedDate) {
-            return this.Update(Category, Subcategory, statuss, InventoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodScreen, LCDBasScreen, ProcessedDate, Original_BoxID, Original_Category, Original_Subcategory, Original_statuss, Original_InventoryDate, Original_Vendor, Original_NetWeight, Original_Qty, Original_Gaylord, Original_LCDGoodScreen, Original_LCDBasScreen, Original_ProcessedDate, Original_BoxID);
+            return this.Update(Category, Subcategory, StatusOfBox, InventoryDate, Vendor, NetWeight, Qty, Gaylord, LCDGoodScreen, LCDBadScreen, ProcessedDate, Original_BoxID, Original_Category, Original_Subcategory, Original_StatusOfBox, Original_InventoryDate, Original_Vendor, Original_NetWeight, Original_Qty, Original_Gaylord, Original_LCDGoodScreen, Original_LCDBadScreen, Original_ProcessedDate, Original_BoxID);
         }
     }
     

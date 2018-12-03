@@ -30,15 +30,15 @@ namespace Recycling_Center_App
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertAllData(AllData instance);
-    partial void UpdateAllData(AllData instance);
-    partial void DeleteAllData(AllData instance);
     partial void InsertVendor(Vendor instance);
     partial void UpdateVendor(Vendor instance);
     partial void DeleteVendor(Vendor instance);
     partial void InsertComputerRecyclingLocation(ComputerRecyclingLocation instance);
     partial void UpdateComputerRecyclingLocation(ComputerRecyclingLocation instance);
     partial void DeleteComputerRecyclingLocation(ComputerRecyclingLocation instance);
+    partial void InsertAllData(AllData instance);
+    partial void UpdateAllData(AllData instance);
+    partial void DeleteAllData(AllData instance);
     #endregion
 		
 		public CIS260_recycleDataContext() : 
@@ -71,14 +71,6 @@ namespace Recycling_Center_App
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<AllData> AllDatas
-		{
-			get
-			{
-				return this.GetTable<AllData>();
-			}
-		}
-		
 		public System.Data.Linq.Table<Vendor> Vendors
 		{
 			get
@@ -94,330 +86,12 @@ namespace Recycling_Center_App
 				return this.GetTable<ComputerRecyclingLocation>();
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AllData")]
-	public partial class AllData : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _BoxID;
-		
-		private string _Category;
-		
-		private string _Subcategory;
-		
-		private string _statuss;
-		
-		private string _InventoryDate;
-		
-		private string _Vendor;
-		
-		private string _NetWeight;
-		
-		private System.Nullable<int> _Qty;
-		
-		private string _Gaylord;
-		
-		private string _LCDGoodScreen;
-		
-		private string _LCDBasScreen;
-		
-		private string _ProcessedDate;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnBoxIDChanging(int value);
-    partial void OnBoxIDChanged();
-    partial void OnCategoryChanging(string value);
-    partial void OnCategoryChanged();
-    partial void OnSubcategoryChanging(string value);
-    partial void OnSubcategoryChanged();
-    partial void OnstatussChanging(string value);
-    partial void OnstatussChanged();
-    partial void OnInventoryDateChanging(string value);
-    partial void OnInventoryDateChanged();
-    partial void OnVendorChanging(string value);
-    partial void OnVendorChanged();
-    partial void OnNetWeightChanging(string value);
-    partial void OnNetWeightChanged();
-    partial void OnQtyChanging(System.Nullable<int> value);
-    partial void OnQtyChanged();
-    partial void OnGaylordChanging(string value);
-    partial void OnGaylordChanged();
-    partial void OnLCDGoodScreenChanging(string value);
-    partial void OnLCDGoodScreenChanged();
-    partial void OnLCDBasScreenChanging(string value);
-    partial void OnLCDBasScreenChanged();
-    partial void OnProcessedDateChanging(string value);
-    partial void OnProcessedDateChanged();
-    #endregion
-		
-		public AllData()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BoxID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int BoxID
+		public System.Data.Linq.Table<AllData> AllDatas
 		{
 			get
 			{
-				return this._BoxID;
-			}
-			set
-			{
-				if ((this._BoxID != value))
-				{
-					this.OnBoxIDChanging(value);
-					this.SendPropertyChanging();
-					this._BoxID = value;
-					this.SendPropertyChanged("BoxID");
-					this.OnBoxIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(50)")]
-		public string Category
-		{
-			get
-			{
-				return this._Category;
-			}
-			set
-			{
-				if ((this._Category != value))
-				{
-					this.OnCategoryChanging(value);
-					this.SendPropertyChanging();
-					this._Category = value;
-					this.SendPropertyChanged("Category");
-					this.OnCategoryChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Subcategory", DbType="VarChar(50)")]
-		public string Subcategory
-		{
-			get
-			{
-				return this._Subcategory;
-			}
-			set
-			{
-				if ((this._Subcategory != value))
-				{
-					this.OnSubcategoryChanging(value);
-					this.SendPropertyChanging();
-					this._Subcategory = value;
-					this.SendPropertyChanged("Subcategory");
-					this.OnSubcategoryChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_statuss", DbType="VarChar(50)")]
-		public string statuss
-		{
-			get
-			{
-				return this._statuss;
-			}
-			set
-			{
-				if ((this._statuss != value))
-				{
-					this.OnstatussChanging(value);
-					this.SendPropertyChanging();
-					this._statuss = value;
-					this.SendPropertyChanged("statuss");
-					this.OnstatussChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InventoryDate", DbType="VarChar(50)")]
-		public string InventoryDate
-		{
-			get
-			{
-				return this._InventoryDate;
-			}
-			set
-			{
-				if ((this._InventoryDate != value))
-				{
-					this.OnInventoryDateChanging(value);
-					this.SendPropertyChanging();
-					this._InventoryDate = value;
-					this.SendPropertyChanged("InventoryDate");
-					this.OnInventoryDateChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vendor", DbType="VarChar(50)")]
-		public string Vendor
-		{
-			get
-			{
-				return this._Vendor;
-			}
-			set
-			{
-				if ((this._Vendor != value))
-				{
-					this.OnVendorChanging(value);
-					this.SendPropertyChanging();
-					this._Vendor = value;
-					this.SendPropertyChanged("Vendor");
-					this.OnVendorChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NetWeight", DbType="VarChar(50)")]
-		public string NetWeight
-		{
-			get
-			{
-				return this._NetWeight;
-			}
-			set
-			{
-				if ((this._NetWeight != value))
-				{
-					this.OnNetWeightChanging(value);
-					this.SendPropertyChanging();
-					this._NetWeight = value;
-					this.SendPropertyChanged("NetWeight");
-					this.OnNetWeightChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty", DbType="Int")]
-		public System.Nullable<int> Qty
-		{
-			get
-			{
-				return this._Qty;
-			}
-			set
-			{
-				if ((this._Qty != value))
-				{
-					this.OnQtyChanging(value);
-					this.SendPropertyChanging();
-					this._Qty = value;
-					this.SendPropertyChanged("Qty");
-					this.OnQtyChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Gaylord", DbType="VarChar(50)")]
-		public string Gaylord
-		{
-			get
-			{
-				return this._Gaylord;
-			}
-			set
-			{
-				if ((this._Gaylord != value))
-				{
-					this.OnGaylordChanging(value);
-					this.SendPropertyChanging();
-					this._Gaylord = value;
-					this.SendPropertyChanged("Gaylord");
-					this.OnGaylordChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LCDGoodScreen", DbType="VarChar(50)")]
-		public string LCDGoodScreen
-		{
-			get
-			{
-				return this._LCDGoodScreen;
-			}
-			set
-			{
-				if ((this._LCDGoodScreen != value))
-				{
-					this.OnLCDGoodScreenChanging(value);
-					this.SendPropertyChanging();
-					this._LCDGoodScreen = value;
-					this.SendPropertyChanged("LCDGoodScreen");
-					this.OnLCDGoodScreenChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LCDBasScreen", DbType="VarChar(50)")]
-		public string LCDBasScreen
-		{
-			get
-			{
-				return this._LCDBasScreen;
-			}
-			set
-			{
-				if ((this._LCDBasScreen != value))
-				{
-					this.OnLCDBasScreenChanging(value);
-					this.SendPropertyChanging();
-					this._LCDBasScreen = value;
-					this.SendPropertyChanged("LCDBasScreen");
-					this.OnLCDBasScreenChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProcessedDate", DbType="VarChar(50)")]
-		public string ProcessedDate
-		{
-			get
-			{
-				return this._ProcessedDate;
-			}
-			set
-			{
-				if ((this._ProcessedDate != value))
-				{
-					this.OnProcessedDateChanging(value);
-					this.SendPropertyChanging();
-					this._ProcessedDate = value;
-					this.SendPropertyChanged("ProcessedDate");
-					this.OnProcessedDateChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+				return this.GetTable<AllData>();
 			}
 		}
 	}
@@ -881,6 +555,332 @@ namespace Recycling_Center_App
 					this._Country = value;
 					this.SendPropertyChanged("Country");
 					this.OnCountryChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.AllData")]
+	public partial class AllData : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _BoxID;
+		
+		private string _Category;
+		
+		private string _Subcategory;
+		
+		private string _StatusOfBox;
+		
+		private string _InventoryDate;
+		
+		private string _Vendor;
+		
+		private string _NetWeight;
+		
+		private System.Nullable<int> _Qty;
+		
+		private string _Gaylord;
+		
+		private string _LCDGoodScreen;
+		
+		private string _LCDBadScreen;
+		
+		private string _ProcessedDate;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnBoxIDChanging(int value);
+    partial void OnBoxIDChanged();
+    partial void OnCategoryChanging(string value);
+    partial void OnCategoryChanged();
+    partial void OnSubcategoryChanging(string value);
+    partial void OnSubcategoryChanged();
+    partial void OnStatusOfBoxChanging(string value);
+    partial void OnStatusOfBoxChanged();
+    partial void OnInventoryDateChanging(string value);
+    partial void OnInventoryDateChanged();
+    partial void OnVendorChanging(string value);
+    partial void OnVendorChanged();
+    partial void OnNetWeightChanging(string value);
+    partial void OnNetWeightChanged();
+    partial void OnQtyChanging(System.Nullable<int> value);
+    partial void OnQtyChanged();
+    partial void OnGaylordChanging(string value);
+    partial void OnGaylordChanged();
+    partial void OnLCDGoodScreenChanging(string value);
+    partial void OnLCDGoodScreenChanged();
+    partial void OnLCDBadScreenChanging(string value);
+    partial void OnLCDBadScreenChanged();
+    partial void OnProcessedDateChanging(string value);
+    partial void OnProcessedDateChanged();
+    #endregion
+		
+		public AllData()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_BoxID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int BoxID
+		{
+			get
+			{
+				return this._BoxID;
+			}
+			set
+			{
+				if ((this._BoxID != value))
+				{
+					this.OnBoxIDChanging(value);
+					this.SendPropertyChanging();
+					this._BoxID = value;
+					this.SendPropertyChanged("BoxID");
+					this.OnBoxIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(50)")]
+		public string Category
+		{
+			get
+			{
+				return this._Category;
+			}
+			set
+			{
+				if ((this._Category != value))
+				{
+					this.OnCategoryChanging(value);
+					this.SendPropertyChanging();
+					this._Category = value;
+					this.SendPropertyChanged("Category");
+					this.OnCategoryChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Subcategory", DbType="VarChar(50)")]
+		public string Subcategory
+		{
+			get
+			{
+				return this._Subcategory;
+			}
+			set
+			{
+				if ((this._Subcategory != value))
+				{
+					this.OnSubcategoryChanging(value);
+					this.SendPropertyChanging();
+					this._Subcategory = value;
+					this.SendPropertyChanged("Subcategory");
+					this.OnSubcategoryChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StatusOfBox", DbType="VarChar(50)")]
+		public string StatusOfBox
+		{
+			get
+			{
+				return this._StatusOfBox;
+			}
+			set
+			{
+				if ((this._StatusOfBox != value))
+				{
+					this.OnStatusOfBoxChanging(value);
+					this.SendPropertyChanging();
+					this._StatusOfBox = value;
+					this.SendPropertyChanged("StatusOfBox");
+					this.OnStatusOfBoxChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InventoryDate", DbType="VarChar(50)")]
+		public string InventoryDate
+		{
+			get
+			{
+				return this._InventoryDate;
+			}
+			set
+			{
+				if ((this._InventoryDate != value))
+				{
+					this.OnInventoryDateChanging(value);
+					this.SendPropertyChanging();
+					this._InventoryDate = value;
+					this.SendPropertyChanged("InventoryDate");
+					this.OnInventoryDateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Vendor", DbType="VarChar(50)")]
+		public string Vendor
+		{
+			get
+			{
+				return this._Vendor;
+			}
+			set
+			{
+				if ((this._Vendor != value))
+				{
+					this.OnVendorChanging(value);
+					this.SendPropertyChanging();
+					this._Vendor = value;
+					this.SendPropertyChanged("Vendor");
+					this.OnVendorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NetWeight", DbType="VarChar(50)")]
+		public string NetWeight
+		{
+			get
+			{
+				return this._NetWeight;
+			}
+			set
+			{
+				if ((this._NetWeight != value))
+				{
+					this.OnNetWeightChanging(value);
+					this.SendPropertyChanging();
+					this._NetWeight = value;
+					this.SendPropertyChanged("NetWeight");
+					this.OnNetWeightChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Qty", DbType="Int")]
+		public System.Nullable<int> Qty
+		{
+			get
+			{
+				return this._Qty;
+			}
+			set
+			{
+				if ((this._Qty != value))
+				{
+					this.OnQtyChanging(value);
+					this.SendPropertyChanging();
+					this._Qty = value;
+					this.SendPropertyChanged("Qty");
+					this.OnQtyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Gaylord", DbType="VarChar(50)")]
+		public string Gaylord
+		{
+			get
+			{
+				return this._Gaylord;
+			}
+			set
+			{
+				if ((this._Gaylord != value))
+				{
+					this.OnGaylordChanging(value);
+					this.SendPropertyChanging();
+					this._Gaylord = value;
+					this.SendPropertyChanged("Gaylord");
+					this.OnGaylordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LCDGoodScreen", DbType="VarChar(50)")]
+		public string LCDGoodScreen
+		{
+			get
+			{
+				return this._LCDGoodScreen;
+			}
+			set
+			{
+				if ((this._LCDGoodScreen != value))
+				{
+					this.OnLCDGoodScreenChanging(value);
+					this.SendPropertyChanging();
+					this._LCDGoodScreen = value;
+					this.SendPropertyChanged("LCDGoodScreen");
+					this.OnLCDGoodScreenChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LCDBadScreen", DbType="VarChar(50)")]
+		public string LCDBadScreen
+		{
+			get
+			{
+				return this._LCDBadScreen;
+			}
+			set
+			{
+				if ((this._LCDBadScreen != value))
+				{
+					this.OnLCDBadScreenChanging(value);
+					this.SendPropertyChanging();
+					this._LCDBadScreen = value;
+					this.SendPropertyChanged("LCDBadScreen");
+					this.OnLCDBadScreenChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ProcessedDate", DbType="VarChar(50)")]
+		public string ProcessedDate
+		{
+			get
+			{
+				return this._ProcessedDate;
+			}
+			set
+			{
+				if ((this._ProcessedDate != value))
+				{
+					this.OnProcessedDateChanging(value);
+					this.SendPropertyChanging();
+					this._ProcessedDate = value;
+					this.SendPropertyChanged("ProcessedDate");
+					this.OnProcessedDateChanged();
 				}
 			}
 		}
