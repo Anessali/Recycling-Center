@@ -45,5 +45,16 @@ namespace Recycling_Center_App
             AdminPage newAdmin = new AdminPage();
             newAdmin.Show();
         }
+
+        private void adminToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AdminLogin login = new AdminLogin();
+            login.Show();
+        }
+
+        private void closeToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

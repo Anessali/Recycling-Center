@@ -5,6 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* ************************************************************* *
+ * Contact Tj Liggett if you have any questions about this page  *
+ * Email: liggetttj@gmail.com                                    *
+ * Github: https://github.com/ShiroNya                           *
+ * ************************************************************* */
+
 namespace Recycling_Center_App
 {
     /// <summary>

@@ -10,18 +10,17 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Data.SqlClient;
 
-/* ******************************************************************* *
- * Contact Tj Liggett if you have any questions about the BillOfLading *
- * Email: liggetttj@gmail.com                                          *
- * Github: https://github.com/ShiroNya                                 *
- * ******************************************************************* */
+/* ************************************************************* *
+ * Contact Tj Liggett if you have any questions about this page  *
+ * Email: liggetttj@gmail.com                                    *
+ * Github: https://github.com/ShiroNya                           *
+ * ************************************************************* */
 
 namespace Recycling_Center_App
 {
     public partial class BillOfLading : Form
     {
         CIS260_recycleDataContext dc;
-
         public BillOfLading()
         {
             InitializeComponent();
@@ -98,12 +97,12 @@ namespace Recycling_Center_App
         {
             printDiag.ShowHelp = true;
             printDiag.Document = printDocument1;
-            printPreviewDialog1.ShowDialog();
-            //DialogResult result = printDiag.ShowDialog();
-            //if (result == DialogResult.OK)
-            //{
-            //    printDocument1.Print();
-            //}
+            //printPreviewDialog1.ShowDialog(); //unimplemented print preview. Can still be used for testing
+            DialogResult result = printDiag.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
 
         }
 
@@ -113,6 +112,12 @@ namespace Recycling_Center_App
             return setFont;
         }
 
+        /// <summary>
+        /// Prints borders around the page.
+        /// </summary>
+        /// <param name="e"></param>
+        /// <param name="borderDistance"></param>
+        /// <param name="pen"></param>
         private void DrawBorders(PrintPageEventArgs e, int borderDistance, Pen pen)
         {
             int xMargin = e.PageBounds.Width,
@@ -137,7 +142,6 @@ namespace Recycling_Center_App
         {
             this.WindowState = FormWindowState.Maximized;
             dGridPackages.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            //pulls boxes into datagrid
             dc = new CIS260_recycleDataContext();
             dGridPackages.DataSource = dc.AllDatas;
         }
@@ -145,11 +149,6 @@ namespace Recycling_Center_App
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dGridPackages_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

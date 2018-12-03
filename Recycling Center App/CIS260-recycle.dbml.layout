@@ -20,5 +20,11 @@
         <elementListCompartment Id="fd9405f7-7a88-4722-8bcd-cdb9c2ce665f" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="d9267c96-eac5-4faa-aa26-09e42c13e980" absoluteBounds="2.875, 4, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/CIS260_recycleDataContext/Administrator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa46085a-1c94-4434-9178-6af5353fb624" absoluteBounds="2.89, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

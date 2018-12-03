@@ -39,6 +39,9 @@ namespace Recycling_Center_App
     partial void InsertAllData(AllData instance);
     partial void UpdateAllData(AllData instance);
     partial void DeleteAllData(AllData instance);
+    partial void InsertAdministrator(Administrator instance);
+    partial void UpdateAdministrator(Administrator instance);
+    partial void DeleteAdministrator(Administrator instance);
     #endregion
 		
 		public CIS260_recycleDataContext() : 
@@ -93,6 +96,21 @@ namespace Recycling_Center_App
 			{
 				return this.GetTable<AllData>();
 			}
+		}
+		
+		public System.Data.Linq.Table<Administrator> Administrators
+		{
+			get
+			{
+				return this.GetTable<Administrator>();
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.Admin_Select")]
+		public ISingleResult<Admin_SelectResult> Admin_Select()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<Admin_SelectResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -902,6 +920,118 @@ namespace Recycling_Center_App
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Administrator")]
+	public partial class Administrator : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _AdministratorID;
+		
+		private string _AdministratorPassword;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnAdministratorIDChanging(int value);
+    partial void OnAdministratorIDChanged();
+    partial void OnAdministratorPasswordChanging(string value);
+    partial void OnAdministratorPasswordChanged();
+    #endregion
+		
+		public Administrator()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AdministratorID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int AdministratorID
+		{
+			get
+			{
+				return this._AdministratorID;
+			}
+			set
+			{
+				if ((this._AdministratorID != value))
+				{
+					this.OnAdministratorIDChanging(value);
+					this.SendPropertyChanging();
+					this._AdministratorID = value;
+					this.SendPropertyChanged("AdministratorID");
+					this.OnAdministratorIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AdministratorPassword", DbType="VarChar(50)")]
+		public string AdministratorPassword
+		{
+			get
+			{
+				return this._AdministratorPassword;
+			}
+			set
+			{
+				if ((this._AdministratorPassword != value))
+				{
+					this.OnAdministratorPasswordChanging(value);
+					this.SendPropertyChanging();
+					this._AdministratorPassword = value;
+					this.SendPropertyChanged("AdministratorPassword");
+					this.OnAdministratorPasswordChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	public partial class Admin_SelectResult
+	{
+		
+		private string _AdministratorPassword;
+		
+		public Admin_SelectResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AdministratorPassword", DbType="VarChar(50)")]
+		public string AdministratorPassword
+		{
+			get
+			{
+				return this._AdministratorPassword;
+			}
+			set
+			{
+				if ((this._AdministratorPassword != value))
+				{
+					this._AdministratorPassword = value;
+				}
 			}
 		}
 	}

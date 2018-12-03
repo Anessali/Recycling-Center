@@ -51,7 +51,6 @@
             this.stateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zipDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._CIS260_recycleDataSet = new Recycling_Center_App._CIS260_recycleDataSet();
             this.dataGrvData = new System.Windows.Forms.DataGridView();
             this.boxIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +70,6 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).BeginInit();
@@ -213,11 +211,6 @@
             this.countryDataGridViewTextBoxColumn2.DataPropertyName = "Country";
             this.countryDataGridViewTextBoxColumn2.HeaderText = "Country";
             this.countryDataGridViewTextBoxColumn2.Name = "countryDataGridViewTextBoxColumn2";
-            // 
-            // _CIS260_recycleDataSet
-            // 
-            this._CIS260_recycleDataSet.DataSetName = "_CIS260_recycleDataSet";
-            this._CIS260_recycleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGrvData
             // 
@@ -380,7 +373,6 @@
             this.Name = "frmDatabase";
             this.Text = "Database";
             this.Load += new System.EventHandler(this.frmDatabase_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).EndInit();
@@ -414,7 +406,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn countryDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaterialID;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaterialName;
-        private _CIS260_recycleDataSet _CIS260_recycleDataSet;
         private System.Windows.Forms.DataGridView dataGrvData;
         private _CIS260_recycleDataSet1 _CIS260_recycleDataSet1;
         private System.Windows.Forms.BindingSource allDataBindingSource;

@@ -59,3 +59,4 @@ C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminLogin.resources

@@ -68,7 +68,6 @@
             this.dGridPackages.ReadOnly = true;
             this.dGridPackages.Size = new System.Drawing.Size(1000, 539);
             this.dGridPackages.TabIndex = 16;
-            this.dGridPackages.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGridPackages_CellClick);
             // 
             // panel1
             // 
