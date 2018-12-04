@@ -52,24 +52,24 @@
             this.zipDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGrvData = new System.Windows.Forms.DataGridView();
-            this.boxIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.subcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statussDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inventoryDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vendorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.netWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gaylordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lCDGoodScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lCDBasScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.processedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.allDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._CIS260_recycleDataSet1 = new Recycling_Center_App._CIS260_recycleDataSet1();
             this.allDataTableAdapter = new Recycling_Center_App._CIS260_recycleDataSet1TableAdapters.AllDataTableAdapter();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.boxIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.subcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusOfBoxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inventoryDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vendorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.netWeightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gaylordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lCDGoodScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lCDBadScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.processedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).BeginInit();
@@ -220,14 +220,14 @@
             this.boxIDDataGridViewTextBoxColumn,
             this.categoryDataGridViewTextBoxColumn,
             this.subcategoryDataGridViewTextBoxColumn,
-            this.statussDataGridViewTextBoxColumn,
+            this.statusOfBoxDataGridViewTextBoxColumn,
             this.inventoryDateDataGridViewTextBoxColumn,
             this.vendorDataGridViewTextBoxColumn,
             this.netWeightDataGridViewTextBoxColumn,
             this.qtyDataGridViewTextBoxColumn,
             this.gaylordDataGridViewTextBoxColumn,
             this.lCDGoodScreenDataGridViewTextBoxColumn,
-            this.lCDBasScreenDataGridViewTextBoxColumn,
+            this.lCDBadScreenDataGridViewTextBoxColumn,
             this.processedDateDataGridViewTextBoxColumn});
             this.dataGrvData.DataSource = this.allDataBindingSource;
             this.dataGrvData.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -235,79 +235,6 @@
             this.dataGrvData.Name = "dataGrvData";
             this.dataGrvData.Size = new System.Drawing.Size(1244, 421);
             this.dataGrvData.TabIndex = 0;
-            // 
-            // boxIDDataGridViewTextBoxColumn
-            // 
-            this.boxIDDataGridViewTextBoxColumn.DataPropertyName = "BoxID";
-            this.boxIDDataGridViewTextBoxColumn.HeaderText = "BoxID";
-            this.boxIDDataGridViewTextBoxColumn.Name = "boxIDDataGridViewTextBoxColumn";
-            this.boxIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            // 
-            // subcategoryDataGridViewTextBoxColumn
-            // 
-            this.subcategoryDataGridViewTextBoxColumn.DataPropertyName = "Subcategory";
-            this.subcategoryDataGridViewTextBoxColumn.HeaderText = "Subcategory";
-            this.subcategoryDataGridViewTextBoxColumn.Name = "subcategoryDataGridViewTextBoxColumn";
-            // 
-            // statussDataGridViewTextBoxColumn
-            // 
-            this.statussDataGridViewTextBoxColumn.DataPropertyName = "statuss";
-            this.statussDataGridViewTextBoxColumn.HeaderText = "statuss";
-            this.statussDataGridViewTextBoxColumn.Name = "statussDataGridViewTextBoxColumn";
-            // 
-            // inventoryDateDataGridViewTextBoxColumn
-            // 
-            this.inventoryDateDataGridViewTextBoxColumn.DataPropertyName = "InventoryDate";
-            this.inventoryDateDataGridViewTextBoxColumn.HeaderText = "InventoryDate";
-            this.inventoryDateDataGridViewTextBoxColumn.Name = "inventoryDateDataGridViewTextBoxColumn";
-            // 
-            // vendorDataGridViewTextBoxColumn
-            // 
-            this.vendorDataGridViewTextBoxColumn.DataPropertyName = "Vendor";
-            this.vendorDataGridViewTextBoxColumn.HeaderText = "Vendor";
-            this.vendorDataGridViewTextBoxColumn.Name = "vendorDataGridViewTextBoxColumn";
-            // 
-            // netWeightDataGridViewTextBoxColumn
-            // 
-            this.netWeightDataGridViewTextBoxColumn.DataPropertyName = "NetWeight";
-            this.netWeightDataGridViewTextBoxColumn.HeaderText = "NetWeight";
-            this.netWeightDataGridViewTextBoxColumn.Name = "netWeightDataGridViewTextBoxColumn";
-            // 
-            // qtyDataGridViewTextBoxColumn
-            // 
-            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "Qty";
-            this.qtyDataGridViewTextBoxColumn.HeaderText = "Qty";
-            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
-            // 
-            // gaylordDataGridViewTextBoxColumn
-            // 
-            this.gaylordDataGridViewTextBoxColumn.DataPropertyName = "Gaylord";
-            this.gaylordDataGridViewTextBoxColumn.HeaderText = "Gaylord";
-            this.gaylordDataGridViewTextBoxColumn.Name = "gaylordDataGridViewTextBoxColumn";
-            // 
-            // lCDGoodScreenDataGridViewTextBoxColumn
-            // 
-            this.lCDGoodScreenDataGridViewTextBoxColumn.DataPropertyName = "LCDGoodScreen";
-            this.lCDGoodScreenDataGridViewTextBoxColumn.HeaderText = "LCDGoodScreen";
-            this.lCDGoodScreenDataGridViewTextBoxColumn.Name = "lCDGoodScreenDataGridViewTextBoxColumn";
-            // 
-            // lCDBasScreenDataGridViewTextBoxColumn
-            // 
-            this.lCDBasScreenDataGridViewTextBoxColumn.DataPropertyName = "LCDBasScreen";
-            this.lCDBasScreenDataGridViewTextBoxColumn.HeaderText = "LCDBasScreen";
-            this.lCDBasScreenDataGridViewTextBoxColumn.Name = "lCDBasScreenDataGridViewTextBoxColumn";
-            // 
-            // processedDateDataGridViewTextBoxColumn
-            // 
-            this.processedDateDataGridViewTextBoxColumn.DataPropertyName = "ProcessedDate";
-            this.processedDateDataGridViewTextBoxColumn.HeaderText = "ProcessedDate";
-            this.processedDateDataGridViewTextBoxColumn.Name = "processedDateDataGridViewTextBoxColumn";
             // 
             // allDataBindingSource
             // 
@@ -363,6 +290,79 @@
             // 
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
+            // boxIDDataGridViewTextBoxColumn
+            // 
+            this.boxIDDataGridViewTextBoxColumn.DataPropertyName = "BoxID";
+            this.boxIDDataGridViewTextBoxColumn.HeaderText = "BoxID";
+            this.boxIDDataGridViewTextBoxColumn.Name = "boxIDDataGridViewTextBoxColumn";
+            this.boxIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "Category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            // 
+            // subcategoryDataGridViewTextBoxColumn
+            // 
+            this.subcategoryDataGridViewTextBoxColumn.DataPropertyName = "Subcategory";
+            this.subcategoryDataGridViewTextBoxColumn.HeaderText = "Subcategory";
+            this.subcategoryDataGridViewTextBoxColumn.Name = "subcategoryDataGridViewTextBoxColumn";
+            // 
+            // statusOfBoxDataGridViewTextBoxColumn
+            // 
+            this.statusOfBoxDataGridViewTextBoxColumn.DataPropertyName = "StatusOfBox";
+            this.statusOfBoxDataGridViewTextBoxColumn.HeaderText = "StatusOfBox";
+            this.statusOfBoxDataGridViewTextBoxColumn.Name = "statusOfBoxDataGridViewTextBoxColumn";
+            // 
+            // inventoryDateDataGridViewTextBoxColumn
+            // 
+            this.inventoryDateDataGridViewTextBoxColumn.DataPropertyName = "InventoryDate";
+            this.inventoryDateDataGridViewTextBoxColumn.HeaderText = "InventoryDate";
+            this.inventoryDateDataGridViewTextBoxColumn.Name = "inventoryDateDataGridViewTextBoxColumn";
+            // 
+            // vendorDataGridViewTextBoxColumn
+            // 
+            this.vendorDataGridViewTextBoxColumn.DataPropertyName = "Vendor";
+            this.vendorDataGridViewTextBoxColumn.HeaderText = "Vendor";
+            this.vendorDataGridViewTextBoxColumn.Name = "vendorDataGridViewTextBoxColumn";
+            // 
+            // netWeightDataGridViewTextBoxColumn
+            // 
+            this.netWeightDataGridViewTextBoxColumn.DataPropertyName = "NetWeight";
+            this.netWeightDataGridViewTextBoxColumn.HeaderText = "NetWeight";
+            this.netWeightDataGridViewTextBoxColumn.Name = "netWeightDataGridViewTextBoxColumn";
+            // 
+            // qtyDataGridViewTextBoxColumn
+            // 
+            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "Qty";
+            this.qtyDataGridViewTextBoxColumn.HeaderText = "Qty";
+            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
+            // 
+            // gaylordDataGridViewTextBoxColumn
+            // 
+            this.gaylordDataGridViewTextBoxColumn.DataPropertyName = "Gaylord";
+            this.gaylordDataGridViewTextBoxColumn.HeaderText = "Gaylord";
+            this.gaylordDataGridViewTextBoxColumn.Name = "gaylordDataGridViewTextBoxColumn";
+            // 
+            // lCDGoodScreenDataGridViewTextBoxColumn
+            // 
+            this.lCDGoodScreenDataGridViewTextBoxColumn.DataPropertyName = "LCDGoodScreen";
+            this.lCDGoodScreenDataGridViewTextBoxColumn.HeaderText = "LCDGoodScreen";
+            this.lCDGoodScreenDataGridViewTextBoxColumn.Name = "lCDGoodScreenDataGridViewTextBoxColumn";
+            // 
+            // lCDBadScreenDataGridViewTextBoxColumn
+            // 
+            this.lCDBadScreenDataGridViewTextBoxColumn.DataPropertyName = "LCDBadScreen";
+            this.lCDBadScreenDataGridViewTextBoxColumn.HeaderText = "LCDBadScreen";
+            this.lCDBadScreenDataGridViewTextBoxColumn.Name = "lCDBadScreenDataGridViewTextBoxColumn";
+            // 
+            // processedDateDataGridViewTextBoxColumn
+            // 
+            this.processedDateDataGridViewTextBoxColumn.DataPropertyName = "ProcessedDate";
+            this.processedDateDataGridViewTextBoxColumn.HeaderText = "ProcessedDate";
+            this.processedDateDataGridViewTextBoxColumn.Name = "processedDateDataGridViewTextBoxColumn";
+            // 
             // frmDatabase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,20 +415,22 @@
         private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statussDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lCDBasScreenDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton saveToolStripButton;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.DataGridViewTextBoxColumn boxIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn subcategoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statussDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusOfBoxDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn inventoryDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vendorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn netWeightDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn gaylordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lCDGoodScreenDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lCDBasScreenDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lCDBadScreenDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn processedDateDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton saveToolStripButton;
-        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
     }
 }
