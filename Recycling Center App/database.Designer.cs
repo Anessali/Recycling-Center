@@ -52,12 +52,6 @@
             this.zipDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.countryDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGrvData = new System.Windows.Forms.DataGridView();
-            this.allDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._CIS260_recycleDataSet1 = new Recycling_Center_App._CIS260_recycleDataSet1();
-            this.allDataTableAdapter = new Recycling_Center_App._CIS260_recycleDataSet1TableAdapters.AllDataTableAdapter();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.boxIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subcategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +64,12 @@
             this.lCDGoodScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lCDBadScreenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.processedDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.allDataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._CIS260_recycleDataSet1 = new Recycling_Center_App._CIS260_recycleDataSet1();
+            this.allDataTableAdapter = new Recycling_Center_App._CIS260_recycleDataSet1TableAdapters.AllDataTableAdapter();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._CIS260_recycleDataSet1)).BeginInit();
@@ -236,60 +236,6 @@
             this.dataGrvData.Size = new System.Drawing.Size(1244, 421);
             this.dataGrvData.TabIndex = 0;
             // 
-            // allDataBindingSource
-            // 
-            this.allDataBindingSource.DataMember = "AllData";
-            this.allDataBindingSource.DataSource = this._CIS260_recycleDataSet1;
-            // 
-            // _CIS260_recycleDataSet1
-            // 
-            this._CIS260_recycleDataSet1.DataSetName = "_CIS260_recycleDataSet1";
-            this._CIS260_recycleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // allDataTableAdapter
-            // 
-            this.allDataTableAdapter.ClearBeforeFill = true;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripButton});
-            this.toolStrip1.Location = new System.Drawing.Point(5, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(35, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // saveToolStripButton
-            // 
-            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
-            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripButton.Name = "saveToolStripButton";
-            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.saveToolStripButton.Text = "&Save";
-            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
-            // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.AutoScroll = true;
-            this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGrvData);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1244, 421);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(1244, 446);
-            this.toolStripContainer1.TabIndex = 2;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // toolStripContainer1.TopToolStripPanel
-            // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
-            // 
             // boxIDDataGridViewTextBoxColumn
             // 
             this.boxIDDataGridViewTextBoxColumn.DataPropertyName = "BoxID";
@@ -362,6 +308,60 @@
             this.processedDateDataGridViewTextBoxColumn.DataPropertyName = "ProcessedDate";
             this.processedDateDataGridViewTextBoxColumn.HeaderText = "ProcessedDate";
             this.processedDateDataGridViewTextBoxColumn.Name = "processedDateDataGridViewTextBoxColumn";
+            // 
+            // allDataBindingSource
+            // 
+            this.allDataBindingSource.DataMember = "AllData";
+            this.allDataBindingSource.DataSource = this._CIS260_recycleDataSet1;
+            // 
+            // _CIS260_recycleDataSet1
+            // 
+            this._CIS260_recycleDataSet1.DataSetName = "_CIS260_recycleDataSet1";
+            this._CIS260_recycleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // allDataTableAdapter
+            // 
+            this.allDataTableAdapter.ClearBeforeFill = true;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripButton});
+            this.toolStrip1.Location = new System.Drawing.Point(5, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(35, 25);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
+            // 
+            // toolStripContainer1
+            // 
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.AutoScroll = true;
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.dataGrvData);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1244, 421);
+            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.Size = new System.Drawing.Size(1244, 446);
+            this.toolStripContainer1.TabIndex = 2;
+            this.toolStripContainer1.Text = "toolStripContainer1";
+            // 
+            // toolStripContainer1.TopToolStripPanel
+            // 
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
             // frmDatabase
             // 

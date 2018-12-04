@@ -43,28 +43,34 @@
             // 
             // btnBillLading
             // 
-            this.btnBillLading.Location = new System.Drawing.Point(55, 55);
+            this.btnBillLading.BackColor = System.Drawing.Color.Green;
+            this.btnBillLading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillLading.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBillLading.Location = new System.Drawing.Point(42, 180);
             this.btnBillLading.Name = "btnBillLading";
             this.btnBillLading.Size = new System.Drawing.Size(96, 40);
             this.btnBillLading.TabIndex = 0;
             this.btnBillLading.Text = "Bill of Lading";
-            this.btnBillLading.UseVisualStyleBackColor = true;
+            this.btnBillLading.UseVisualStyleBackColor = false;
             this.btnBillLading.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnMaterials
             // 
-            this.btnMaterials.Location = new System.Drawing.Point(219, 55);
+            this.btnMaterials.BackColor = System.Drawing.Color.Green;
+            this.btnMaterials.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaterials.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMaterials.Location = new System.Drawing.Point(215, 180);
             this.btnMaterials.Name = "btnMaterials";
             this.btnMaterials.Size = new System.Drawing.Size(96, 40);
             this.btnMaterials.TabIndex = 1;
             this.btnMaterials.Text = "Materials label";
-            this.btnMaterials.UseVisualStyleBackColor = true;
+            this.btnMaterials.UseVisualStyleBackColor = false;
             this.btnMaterials.Click += new System.EventHandler(this.btnMaterials_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 144);
+            this.pictureBox1.Location = new System.Drawing.Point(21, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(482, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -73,12 +79,15 @@
             // 
             // btnDatabase
             // 
-            this.btnDatabase.Location = new System.Drawing.Point(365, 55);
+            this.btnDatabase.BackColor = System.Drawing.Color.Green;
+            this.btnDatabase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDatabase.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDatabase.Location = new System.Drawing.Point(374, 180);
             this.btnDatabase.Name = "btnDatabase";
             this.btnDatabase.Size = new System.Drawing.Size(96, 40);
             this.btnDatabase.TabIndex = 3;
             this.btnDatabase.Text = "Database";
-            this.btnDatabase.UseVisualStyleBackColor = true;
+            this.btnDatabase.UseVisualStyleBackColor = false;
             this.btnDatabase.Click += new System.EventHandler(this.btnDatabase_Click);
             // 
             // menuStrip1
@@ -103,14 +112,14 @@
             // adminToolStripMenuItem1
             // 
             this.adminToolStripMenuItem1.Name = "adminToolStripMenuItem1";
-            this.adminToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
             this.adminToolStripMenuItem1.Text = "Admin";
             this.adminToolStripMenuItem1.Click += new System.EventHandler(this.adminToolStripMenuItem1_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.closeToolStripMenuItem.Text = "Exit";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click_1);
             // 

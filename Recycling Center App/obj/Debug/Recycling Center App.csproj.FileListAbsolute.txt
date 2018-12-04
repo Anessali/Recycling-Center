@@ -60,3 +60,17 @@ C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminLogin.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminLogin.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminPage.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.frmDatabase.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
+C:\Users\Nick\Documents\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.Cache

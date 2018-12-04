@@ -19,7 +19,7 @@ namespace Recycling_Center_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.BackColor = Color.White;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -23,6 +23,7 @@ namespace Recycling_Center_App
         {
             //This line of code loads data into the '_CIS260_recycleDataSet1.AllData' table. You can move, or remove it, as needed.
             this.allDataTableAdapter.Fill(this._CIS260_recycleDataSet1.AllData);
+            this.BackColor = Color.White;
 
         }
 
@@ -36,5 +37,6 @@ namespace Recycling_Center_App
             // button that saves work into database
             this.allDataTableAdapter.Update(this._CIS260_recycleDataSet1.AllData);
         }
+
     }
 }
