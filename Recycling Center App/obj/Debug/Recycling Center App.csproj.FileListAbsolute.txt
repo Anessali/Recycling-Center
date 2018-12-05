@@ -77,3 +77,5 @@ C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recy
 C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
 C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorsPage.resources
 C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorDetails.resources
+C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorDetails.resources
+C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorsPage.resources
