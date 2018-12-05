@@ -33,11 +33,19 @@ namespace Recycling_Center_App
         {
             if (txtPassword.Text == admin[0].AdministratorPassword)
             {
-                MessageBox.Show("Password correct");
+                lblPasswordMismatch.Text = "Password correct. Logging in.";
+                lblPasswordMismatch.ForeColor = Color.Green;
+                lblPasswordMismatch.Visible = true;
+                AdminPage startPage = new AdminPage();
+                this.Close();
+                startPage.Show();
             }
             else
             {
-                MessageBox.Show("Try again");
+                //Error message is thrown if user enters wrong password
+                lblPasswordMismatch.Text = "Password mismatch. Please try again.";
+                lblPasswordMismatch.ForeColor = Color.Red;
+                lblPasswordMismatch.Visible = true;
             }
         }
     }

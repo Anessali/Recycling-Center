@@ -60,3 +60,20 @@ C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
 C:\Users\Shiro\Desktop\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminLogin.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe.config
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.exe
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\bin\Debug\Recycling Center App.pdb
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csprojAssemblyReference.cache
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminLogin.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.AdminPage.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.BillOfLading.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.frmDatabase.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MainMenu.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.MaterialsLabelF.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.Properties.Resources.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.GenerateResource.cache
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.csproj.CoreCompileInputs.cache
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.exe
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling Center App.pdb
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorsPage.resources
+C:\Users\Shiro\Google Drive\Recycling-Center\Recycling Center App\obj\Debug\Recycling_Center_App.VendorDetails.resources

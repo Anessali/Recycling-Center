@@ -16,6 +16,9 @@ using System.Data.SqlClient;
  * Github: https://github.com/ShiroNya                           *
  * ************************************************************* */
 
+    /* In order to use Linq, you will need to install LINQ to SQL data tools.
+     * Go to Apps & Features and click modify Visual Studio to open the launcher.
+     * From there, select what you need under Individual Components. */
 namespace Recycling_Center_App
 {
     public partial class BillOfLading : Form
@@ -85,7 +88,6 @@ namespace Recycling_Center_App
             e.Graphics.DrawLine(pen, xCoordOne - 30, yCoordOne + 280, xCoordTwo + 320, yCoordOne + 280);
             //Info from AllData table
             e.Graphics.DrawString($"{getAllData.GridInfoList()[7]}", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 300));
-            //e.Graphics.DrawString($"{getAllData.GridInfoList()[7]}", GetFont(16), Brushes.Black, new PointF(xCoordOne, yCoordOne + 300));
             e.Graphics.DrawString($"{getAllData.GridInfoList()[6]}", GetFont(16), Brushes.Black, new PointF(xCoordOne + 450, yCoordOne + 300));
             e.Graphics.DrawString($"{(Convert.ToInt32(getAllData.GridInfoList()[6]) * Convert.ToInt32(getAllData.GridInfoList()[7]))}", GetFont(16), Brushes.Black, new PointF(xCoordOne + 570, yCoordOne + 300));
             #endregion

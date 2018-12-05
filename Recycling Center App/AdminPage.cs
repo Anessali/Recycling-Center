@@ -12,11 +12,7 @@ namespace Recycling_Center_App
 {
     public partial class AdminPage : Form
     {
-        /*
-         * This was going to be an admin page that required a password and name to get into
-         * on this page would have been a way to change the sql connection string and 
-         * any other work that should be password protected. 
-        */
+
         public AdminPage()
         {
             InitializeComponent();
@@ -25,12 +21,19 @@ namespace Recycling_Center_App
 
         private void btnSql_Click(object sender, EventArgs e)
         {
+            /* --Unused code Preston had written--
             string sqlString = txtSql.Text;
            // Credentials cred = new Credentials();
            // cred.SqlString = sqlString;
             this.allDataTableAdapter.Connection.Close();
             this.allDataTableAdapter.Connection.ConnectionString = sqlString;
+            */
+        }
 
+        private void btnVendors_Click(object sender, EventArgs e)
+        {
+            VendorsPage newTable = new VendorsPage();
+            newTable.Show();
         }
     }
 }
