@@ -46,6 +46,8 @@
             this.lblStreet = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtCompany = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -104,7 +106,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(96, 266);
+            this.btnClear.Location = new System.Drawing.Point(96, 288);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(81, 36);
             this.btnClear.TabIndex = 43;
@@ -114,7 +116,7 @@
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(177, 266);
+            this.btnClose.Location = new System.Drawing.Point(177, 288);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(81, 36);
             this.btnClose.TabIndex = 42;
@@ -124,7 +126,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(15, 266);
+            this.btnSave.Location = new System.Drawing.Point(15, 288);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(81, 36);
             this.btnSave.TabIndex = 41;
@@ -214,11 +216,31 @@
             this.label1.TabIndex = 32;
             this.label1.Text = "Vendor Details";
             // 
+            // txtCompany
+            // 
+            this.txtCompany.Location = new System.Drawing.Point(342, 205);
+            this.txtCompany.Name = "txtCompany";
+            this.txtCompany.Size = new System.Drawing.Size(126, 20);
+            this.txtCompany.TabIndex = 51;
+            this.txtCompany.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(263, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Company";
+            // 
             // VendorDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(490, 346);
+            this.Controls.Add(this.txtCompany);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtState);
             this.Controls.Add(this.label2);
@@ -264,5 +286,7 @@
         private System.Windows.Forms.Label lblStreet;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.TextBox txtCompany;
+        private System.Windows.Forms.Label label4;
     }
 }

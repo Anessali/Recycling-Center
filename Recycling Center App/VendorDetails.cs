@@ -61,6 +61,7 @@ namespace Recycling_Center_App
                 obj.State = txtState.Text;
                 obj.Country = txtCountry.Text;
                 obj.Zip = txtZip.Text;
+                obj.Company = txtCompany.Text;
                 dc.SubmitChanges();
                 MessageBox.Show("Record updated");
             }

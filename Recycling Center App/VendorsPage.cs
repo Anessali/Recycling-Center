@@ -27,7 +27,7 @@ namespace Recycling_Center_App
         {
             this.WindowState = FormWindowState.Maximized;
             dc = new CIS260_recycleDataContext();
-            dGridVendors.DataSource = dc.AllDatas;
+            dGridVendors.DataSource = dc.Vendors;
             dGridVendors.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
